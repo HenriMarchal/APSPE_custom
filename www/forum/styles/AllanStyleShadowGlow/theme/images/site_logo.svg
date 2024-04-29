@@ -1,15 +1,58 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
-              "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-
-<svg xmlns="http://www.w3.org/2000/svg"
-     width="3.23333in" height="1.06667in"
-     viewBox="0 0 291 96">
-  <path id="Sélection"
-        fill="none" stroke="black" stroke-width="1"
-        d="M 0.00,0.00
-           C 0.00,0.00 291.00,0.00 291.00,0.00
-             291.00,0.00 291.00,96.00 291.00,96.00
-             291.00,96.00 0.00,96.00 0.00,96.00
-             0.00,96.00 0.00,0.00 0.00,0.00 Z" />
+<svg
+   width="3.23333in"
+   height="1.06667in"
+   viewBox="0 0 291 96"
+   version="1.1"
+   id="svg3"
+   sodipodi:docname="site_logo.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs7">
+    <rect
+       x="10.06064"
+       y="6.6920061"
+       width="175.39992"
+       height="69.192232"
+       id="rect22729" />
+  </defs>
+  <sodipodi:namedview
+     id="namedview5"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="in"
+     showgrid="false"
+     inkscape:zoom="3.7177873"
+     inkscape:cx="154.79637"
+     inkscape:cy="51.105667"
+     inkscape:window-width="1464"
+     inkscape:window-height="876"
+     inkscape:window-x="2056"
+     inkscape:window-y="180"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3" />
+  <path
+     id="Sélection"
+     fill="none"
+     stroke="black"
+     stroke-width="1"
+     d="M 0.00,0.00            C 0.00,0.00 291.00,0.00 291.00,0.00              291.00,0.00 291.00,96.00 291.00,96.00              291.00,96.00 0.00,96.00 0.00,96.00              0.00,96.00 0.00,0.00 0.00,0.00 Z" />
+  <text
+     xml:space="preserve"
+     transform="matrix(0.93750094,0,0,0.93750094,0,-1.9547885e-4)"
+     id="text22727"
+     style="font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect22729)"><tspan
+       x="10.060547"
+       y="20.847656"
+       id="tspan38176"><tspan
+         style="fill:#ffffff"
+         id="tspan38174">ACCUEIL</tspan></tspan></text>
 </svg>
