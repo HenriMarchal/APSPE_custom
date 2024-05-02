@@ -12,11 +12,11 @@ The idea is to trap the scraper in a blank image that checks if the IP is a know
 
 # Arrrowchat
 
-We installed this chat that integrates in PHPBB
+We installed this chat that integrates itself in PHPBB
 
 ## How to uninstall
 
-Remove the snipet `<script type="text/javascript" src="/forum/arrowchat/autoload.php" charset="utf-8"></script>` from overall_header.html of every styles.
+Remove the snipet `<script type="text/javascript" src="/forum/arrowchat/autoload.php" charset="utf-8"></script>` from chat.php.
 
 Drop the tables prefixed by arrowchat.
 
