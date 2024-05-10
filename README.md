@@ -22,3 +22,12 @@ Drop the tables prefixed by arrowchat.
 
 Remove the www/forum/arrowchat folder.
 
+# WordPress
+
+We migrated the site, the forum and the chat in WordPress
+
+## Snippets
+
+there are few shortcodes created for APSPE. It works thanks to insert PHP code snippet plugin.
+
+You must import the code you will find in *.php in modificationsByGUI folder.
