@@ -221,3 +221,12 @@ $defaults = array(
     'admin-preview-callback' => ''
 );
 add_theme_support( 'custom-background', $defaults );
+
+// Add style.css
+add_action( 'wp_enqueue_scripts', 'dark_text_styles' );
+function dark_text_styles() {
+	wp_enqueue_style( 
+		'dark-text', 
+		get_stylesheet_uri()
+	);
+}
