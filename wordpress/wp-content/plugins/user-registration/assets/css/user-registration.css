@@ -304,7 +304,7 @@
   .ur-form-container button.is-active,
   .ur-form-container .button.is-active {
     background: #475bb2;
-    color: #ffffff;
+    color: #000000;
     border-color: #475bb2; }
     .user-registration button.is-active:hover, .user-registration button.is-active:active, .user-registration button.is-active:focus,
     .user-registration .button.is-active:hover,
@@ -317,7 +317,7 @@
     .ur-form-container .button.is-active:active,
     .ur-form-container .button.is-active:focus {
       background: #475bb2;
-      color: #ffffff;
+      color: #000000;
       border-color: #475bb2; }
   .user-registration button .ur-spinner,
   .user-registration .button .ur-spinner,
@@ -377,7 +377,7 @@
 
 .user-registration .button-danger,
 .ur-form-container .button-danger {
-  color: #ffffff;
+  color: #000000;
   background: #ff4f55;
   border-color: #ff4f55;
   box-shadow: 0 1px 0 #ff4f55; }
@@ -385,7 +385,7 @@
   .ur-form-container .button-danger:hover,
   .ur-form-container .button-danger:active,
   .ur-form-container .button-danger:focus {
-    color: #ffffff;
+    color: #000000;
     background: #ef363d;
     border-color: #ef363d;
     box-shadow: 0 1px 0 #ef363d; }
@@ -901,7 +901,7 @@ input.ur-input-border-red, textarea.ur-input-border-red {
       .ur-frontend-form .ur-form-row .ur-form-grid .hide_show_password .password-input-group {
         position: relative; }
         .ur-frontend-form .ur-form-row .ur-form-grid .hide_show_password .password-input-group .password_preview {
-          color: #676d8a;
+          color: #000000;
           position: absolute;
           top: 50%;
           right: 15px;
@@ -963,12 +963,12 @@ input.ur-input-border-red, textarea.ur-input-border-red {
     transition: all 0.35s;
     padding: 10px 15px;
     background: #f0f1f5;
-    color: #676d8a;
+    color: #000000;
     height: 45px; }
   .ur-frontend-form.ur-frontend-form--bordered form .ur-form-row .ur-form-grid legend,
   .ur-frontend-form.ur-frontend-form--bordered form .ur-form-row .ur-form-grid label {
     margin-left: 5px;
-    color: #676d8a; }
+    color: #000000; }
   .ur-frontend-form.ur-frontend-form--bordered form .ur-form-row .ur-form-grid textarea {
     height: 100px; }
   .ur-frontend-form.ur-frontend-form--bordered form .ur-form-row .ur-form-grid .hide_show_password input[type="password"] {
@@ -979,14 +979,14 @@ input.ur-input-border-red, textarea.ur-input-border-red {
   .ur-frontend-form.ur-frontend-form--bordered form button.user-registration-multi-part-nav-next {
     background: #f0f1f5;
     border: 1px solid #e1e1e1;
-    color: #676d8a;
+    color: #000000;
     border-radius: 0; }
     .ur-frontend-form.ur-frontend-form--bordered form input[type="submit"]:hover,
     .ur-frontend-form.ur-frontend-form--bordered form button[type="submit"]:hover,
     .ur-frontend-form.ur-frontend-form--bordered form button.user-registration-multi-part-nav-prev:hover,
     .ur-frontend-form.ur-frontend-form--bordered form button.user-registration-multi-part-nav-next:hover {
       background: #475bb2;
-      color: #ffffff;
+      color: #000000;
       border-color: #475bb2; }
   .ur-frontend-form.ur-frontend-form--flat {
     background: #f7f7f7;
@@ -1006,7 +1006,7 @@ input.ur-input-border-red, textarea.ur-input-border-red {
       outline: none;
       padding: 10px 15px;
       background: #ffffff;
-      color: #676d8a;
+      color: #000000;
       margin-bottom: 10px;
       height: 45px; }
       .ur-frontend-form.ur-frontend-form--flat form .ur-form-row .ur-form-grid input[type="text"]:focus,
@@ -1022,7 +1022,7 @@ input.ur-input-border-red, textarea.ur-input-border-red {
       margin-bottom: 10px; }
     .ur-frontend-form.ur-frontend-form--flat form .ur-form-row .ur-form-grid legend,
     .ur-frontend-form.ur-frontend-form--flat form .ur-form-row .ur-form-grid label {
-      color: #676d8a; }
+      color: #000000; }
     .ur-frontend-form.ur-frontend-form--flat form .ur-form-row .ur-form-grid textarea {
       height: 100px; }
     .ur-frontend-form.ur-frontend-form--flat form .ur-form-row .ur-form-grid .hide_show_password input[type="password"] {
@@ -1041,14 +1041,14 @@ input.ur-input-border-red, textarea.ur-input-border-red {
     transition: all 0.35s;
     padding: 10px 15px;
     background: #ffffff;
-    color: #676d8a;
+    color: #000000;
     height: 45px; }
   .ur-frontend-form.ur-frontend-form--rounded form .ur-form-row .ur-form-grid button[type="button"] {
     border-radius: 25px; }
   .ur-frontend-form.ur-frontend-form--rounded form .ur-form-row .ur-form-grid legend,
   .ur-frontend-form.ur-frontend-form--rounded form .ur-form-row .ur-form-grid label {
     margin-left: 5px;
-    color: #676d8a; }
+    color: #000000; }
   .ur-frontend-form.ur-frontend-form--rounded form .ur-form-row .ur-form-grid textarea {
     height: 100px; }
   .ur-frontend-form.ur-frontend-form--rounded form .ur-form-row .ur-form-grid .hide_show_password input[type="password"] {
@@ -1058,7 +1058,7 @@ input.ur-input-border-red, textarea.ur-input-border-red {
   .ur-frontend-form.ur-frontend-form--rounded form button.user-registration-multi-part-nav-prev,
   .ur-frontend-form.ur-frontend-form--rounded form button.user-registration-multi-part-nav-next {
     border: 0 none;
-    color: #ffffff;
+    color: #000000;
     border-radius: 25px;
     float: none;
     display: block;
@@ -1158,7 +1158,7 @@ input.ur-input-border-red, textarea.ur-input-border-red {
       #user-registration .user-registration-MyAccount-content .user-registration-profile-header header .profile-pic-remove {
         margin-right: 10px; }
       #user-registration .user-registration-MyAccount-content .user-registration-profile-header .user-registration-nick-name {
-        color: #676d8a; }
+        color: #000000; }
     #user-registration .user-registration-MyAccount-content .user-registration-EditProfileForm .user-registration-profile-header .user-registration-img-container {
       width: auto; }
 

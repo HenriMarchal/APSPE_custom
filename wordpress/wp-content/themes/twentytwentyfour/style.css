@@ -15,6 +15,5 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 */
 
 .black-text {
-	color: black;
-	text-align: right;
+	color: black !important;
 }
