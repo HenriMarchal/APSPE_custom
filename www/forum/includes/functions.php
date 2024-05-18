@@ -4108,7 +4108,11 @@ function page_header($page_title = '', $display_online_list = false, $item_id = 
 
 		'SITE_LOGO_IMG'			=> $user->img('site_logo'),
 
-		'U_ARTICLES'			=> append_sid("{$phpbb_root_path}app.$phpEx"),
+		'U_ARTICLES'						=> append_sid("{$phpbb_root_path}app.$phpEx/article"),
+		'U_ARTICLES_PSYCHOLOGIE'			=> append_sid("{$phpbb_root_path}app.$phpEx/article/psychologie"),
+		'U_ARTICLES_TEMOIGNAGES_MALADES'	=> append_sid("{$phpbb_root_path}app.$phpEx/article/temoignages-malades"),
+		'U_ARTICLES_TEMOIGNAGES_GUERIS'		=> append_sid("{$phpbb_root_path}app.$phpEx/article/temoignages-gueris"),
+		'U_NEWSLETTERS'						=> append_sid("{$phpbb_root_path}app.$phpEx/article/newsletters"),
 	));
 
 	$http_headers = array();
