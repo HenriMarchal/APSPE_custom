@@ -1,0 +1,27 @@
+<!-- INCLUDE overall_header.html -->
+
+<div id="content_container" class="<!-- IF S_SHOW_RIGHTBAR -->show<!-- ELSE -->hide<!-- ENDIF-->-rightbar">
+    <div id="content">
+        <div id="content_pagetitle">
+            <h1>{CMBB_CATEGORY_NAME}</h1>
+        </div>
+
+        <!-- IF not S_CMBB_CATEGORY -->
+		
+            <p class="page_link">[ <!-- IF not CMBB_ARTICLE_TOPIC_ID -->{L_COMMENTS_DISABLED}<!-- ELSE --><a href="{ROOT_PATH}{CMBB_ARTICLE_TOPIC_URL}">{L_COMMENTS} ({CMBB_ARTICLE_REACTIONS})</a><!-- ENDIF --> ] | [ <a href="javascript:history.back(-1)">{L_BACK}</a> ]</p>
+        
+            <div class="article_box">
+            
+                <h1>{CMBB_TITLE}</h1>
+                <p class="auteur">{L_POST_BY_AUTHOR} {CMBB_AUTHOR}</p>
+            <!-- ENDIF -->
+            <div id="content_val">{CMBB_CONTENT}</div>
+        <!-- IF not S_CMBB_CATEGORY -->
+            </div>
+        
+            <p class="page_link">[ <!-- IF not CMBB_ARTICLE_TOPIC_ID -->{L_COMMENTS_DISABLED}<!-- ELSE --><a href="{ROOT_PATH}{CMBB_ARTICLE_TOPIC_URL}">{L_COMMENTS} ({CMBB_ARTICLE_REACTIONS})</a><!-- ENDIF --> ] | [ <a href="javascript:history.back(-1)">{L_BACK}</a> ]</p>
+        <!-- ENDIF -->
+    </div>
+</div>
+<!-- INCLUDE footer_extra.html -->
+<!-- INCLUDE overall_footer.html -->
