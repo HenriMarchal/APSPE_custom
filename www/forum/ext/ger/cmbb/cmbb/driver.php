@@ -640,7 +640,7 @@ class driver
 			'S_CAN_EDIT'		 => $this->can_edit($auth),
 			'U_NEW_ARTICLE'		 => $this->helper->route('ger_cmbb_article_edit', array('article_id' => '_new_')),
 			'U_EDIT_ARTICLE'	 => ($this->can_edit($auth, $article) && $mode == 'view') ? $this->helper->route('ger_cmbb_article_edit', array('article_id' => $article['article_id'])) : false,
-			'S_CAN_SEE_HIDDEN'	 => $auth->acl_get('m_'),
+			'S_CAN_SEE_HIDDEN'	 => $auth->acl_get('a_'),
 			'S_HIDDEN'			 => $this->get_hidden(),
 			'U_HIDDEN'			 => $this->helper->route('ger_cmbb_article', array('alias' => 'index')) . '?showhidden=1',   //$this->get_hidden(),index?showhidden=1
 			'U_VIEWONLINE'		 => $this->phpbb_root_path . 'viewonline.' . $this->php_ext,
@@ -671,7 +671,7 @@ class driver
 			{
 				return false;
 			}
-			else if ((($this->user->data['user_id'] == $article['user_id']) && $auth->acl_get('u_cmbb_post_article') ) || $auth->acl_get('m_'))
+			else if ((($this->user->data['user_id'] == $article['user_id']) && $auth->acl_get('u_cmbb_post_article') ) || $auth->acl_get('a_'))
 			{
 				return true;
 			}
@@ -681,7 +681,7 @@ class driver
 			$cats = $this->get_categories();
 			if (empty($cats))
 			{
-				return $auth->acl_get('m_');
+				return $auth->acl_get('a_');
 			}
 			else
 			{

@@ -86,7 +86,7 @@ class save
 			$oldarticle = $this->cmbb->get_article($article_id);
 
 			// Check if user is allowed to edit
-			if (!(($this->user->data['user_id'] == $oldarticle['user_id']) || $this->auth->acl_get('m_') ))
+			if (!(($this->user->data['user_id'] == $oldarticle['user_id']) || $this->auth->acl_get('a_') ))
 			{
 				return $this->helper->error('NOT_AUTHORISED');
 			}
@@ -118,7 +118,7 @@ class save
 			);
 
 			// Delete or restore, but only if we're moderator
-			if ($this->auth->acl_get('m_'))
+			if ($this->auth->acl_get('a_'))
 			{
 				if ($this->request->is_set('delete'))
 				{

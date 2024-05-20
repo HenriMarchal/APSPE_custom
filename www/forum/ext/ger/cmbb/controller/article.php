@@ -128,7 +128,7 @@ class article
 			{
 				if ($this->request->variable('showhidden', '') == 1)
 				{
-					if (!$this->auth->acl_get('m_'))
+					if (!$this->auth->acl_get('a_'))
 					{
 						return $this->helper->error($this->user->lang('NOT_AUTHORISED', $alias));
 
