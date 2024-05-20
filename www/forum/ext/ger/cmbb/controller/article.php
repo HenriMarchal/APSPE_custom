@@ -110,7 +110,7 @@ class article
 		}
 		if ($article['visible'] == 0)
 		{
-			if ($this->auth->acl_get('m_'))
+			if ($this->auth->acl_get('a_'))
 			{
 				$article['content'] = '<div class="warning">' . $this->user->lang('ARTICLE_HIDDEN_WARNING') . '</div>' . $article['content'];
 			}

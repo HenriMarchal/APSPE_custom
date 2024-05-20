@@ -4113,6 +4113,7 @@ function page_header($page_title = '', $display_online_list = false, $item_id = 
 		'U_ARTICLES_TEMOIGNAGES_MALADES'	=> append_sid("{$phpbb_root_path}app.$phpEx/article/temoignages-malades"),
 		'U_ARTICLES_TEMOIGNAGES_GUERIS'		=> append_sid("{$phpbb_root_path}app.$phpEx/article/temoignages-gueris"),
 		'U_NEWSLETTERS'						=> append_sid("{$phpbb_root_path}app.$phpEx/article/newsletters"),
+		'U_AUTO_EVALUATION'					=> append_sid("{$phpbb_root_path}styles/all/template/evaluation_questionnary/index.php"),
 	));
 
 	$http_headers = array();
