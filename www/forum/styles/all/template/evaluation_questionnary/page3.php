@@ -1,5 +1,35 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="fr">
+<head>
+<meta charset="utf-8" />
+<title>Test dauto-évaluation de l'anxiété - page 2</title>
+
+<?php
+/**
+* @ignore
+*/
+define('IN_PHPBB', true);
+$phpbb_root_path = (defined('PHPBB_ROOT_PATH')) ? PHPBB_ROOT_PATH : '../../../../';
+$phpEx = substr(strrchr(__FILE__, '.'), 1);
+include($phpbb_root_path . 'common.' . $phpEx);
+include($phpbb_root_path . 'includes/functions_display.' . $phpEx);
+// temporarily enable superglobals
+$request->enable_super_globals();
+
+// Start session management
+$user->session_begin();
+$auth->acl($user->data);
+$user->setup('viewforum');
+
+$U_AUTO_EVALUATION = append_sid("{$phpbb_root_path}styles/all/template/evaluation_questionnary/index.php");
+$U_AUTO_EVALUATION_P2 = append_sid("{$phpbb_root_path}styles/all/template/evaluation_questionnary/page2.php");
+?>
+
+</head>
+<body>
+
 <div style='text-align:center;'>
-<a href="index.php">
+<a href='<?php echo "$U_AUTO_EVALUATION"; ?>'>
 <font face="Arial, Helvetica" color="black" size=2>
 Retour page d'accueil
 </font>
@@ -561,9 +591,9 @@ echo "<table align=\"center\" border=1 cellpadding=15 cellspacing=0 bordercolor=
 				echo "</td>\n";
 			echo "</tr>\n";
 			echo "<tr bgcolor=\"#3399CC\">\n";
-				echo "<td align=\"center\" colspan=3>\n";
-					echo "<a href=\"page2.php3\">\n";
-					echo "<font face=\"Arial, Helvetica\" color=\"#ffffff\" size=2>\n";
+				echo "<td align=\"center\" colspan=3>\n"; ?>
+					<a href='<?php echo "$U_AUTO_EVALUATION_P2"; ?>'><br>
+					<?php echo "<font face=\"Arial, Helvetica\" color=\"#ffffff\" size=2>\n";
 					echo "<b>Recommencer le test</b>\n";
 					echo "</font>\n";
 					echo "</a>\n";
@@ -572,12 +602,18 @@ echo "<table align=\"center\" border=1 cellpadding=15 cellspacing=0 bordercolor=
 		}
 	}
 echo "</table>\n";
+
+// disable superglobals again
+$request->disable_super_globals();
 ?>
 <br>
 <div style='text-align:center;'>
-<a href="index.php">
+<a href='<?php echo "$U_AUTO_EVALUATION"; ?>'>
 <font face="Arial, Helvetica" color="black" size=2>
 Retour page d'accueil
 </font>
 </a>
 </div>
+
+</body>
+</html>

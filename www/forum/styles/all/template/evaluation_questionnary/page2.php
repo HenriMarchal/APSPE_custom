@@ -1,6 +1,33 @@
-<form action="page3.php" method=post>
+<!DOCTYPE html>
+<html dir="ltr" lang="fr">
+<head>
+<meta charset="utf-8" />
+<title>Test dauto-évaluation de l'anxiété - page 2</title>
+
+<?php
+/**
+* @ignore
+*/
+define('IN_PHPBB', true);
+$phpbb_root_path = (defined('PHPBB_ROOT_PATH')) ? PHPBB_ROOT_PATH : '../../../../';
+$phpEx = substr(strrchr(__FILE__, '.'), 1);
+include($phpbb_root_path . 'common.' . $phpEx);
+include($phpbb_root_path . 'includes/functions_display.' . $phpEx);
+
+// Start session management
+$user->session_begin();
+$auth->acl($user->data);
+$user->setup('viewforum');
+
+$U_AUTO_EVALUATION = append_sid("{$phpbb_root_path}styles/all/template/evaluation_questionnary/index.php");
+$U_AUTO_EVALUATION_P3 = append_sid("{$phpbb_root_path}styles/all/template/evaluation_questionnary/page3.php");
+?>
+
+</head>
+<body>
+<form action='<?php echo "$U_AUTO_EVALUATION_P3"; ?>' method=post>
 <div align="center">
-<a href="index.php">
+<a href='<?php echo "$U_AUTO_EVALUATION"; ?>'>
 <font face="Arial, Helvetica" color="#00552b" size=2>
 Retour page d'accueil
 </font>
@@ -390,9 +417,11 @@ Retour page d'accueil
 </table>
 </form>
 <div align="center">
-<a href="index.php">
+<a href='<?php echo "$U_AUTO_EVALUATION"; ?>'>
 <font face="Arial, Helvetica" color="#00552b" size=2>
 Retour page d'accueil
 </font>
 </a>
 </div>
+</body>
+</html>
