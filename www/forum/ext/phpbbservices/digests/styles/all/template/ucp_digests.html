@@ -1,0 +1,241 @@
+{% INCLUDE 'ucp_header.html' %}
+{% if S_INCLUDE_DIGESTS_JS %}
+	{# Includes ACP - JS #}
+	{% if not definition.INCLUDED_DIGESTSJS %}
+		{% INCLUDEJS '@phpbbservices_digests/js/jquery-ui-1.12.1.min.js' %}
+		{% INCLUDEJS '@phpbbservices_digests/js/digests.js' %}
+		{% DEFINE INCLUDED_DIGESTSJS = true %}
+	{% endif %}
+{% endif %}
+<script>
+{% if S_DIGESTS_POST_FILTERS %}
+	var adminMaxItems = {{ S_DIGESTS_MAX_ADMIN_ITEMS }};
+{% endif %}
+	var dialogError = "{{ lang('ERROR')|escape('js') }}";
+{% if S_DIGESTS_FORUMS_SELECTION %}
+	var excludedForums = "{{ lang('DIGESTS_EXCLUDED_FORUMS')|escape('js') }}";
+	var excludedForumsArray = excludedForums.split(',');
+	var ignoredForums = "{{ lang('DIGESTS_IGNORED_FORUMS')|escape('js') }}";
+	var ignoredForumsArray = ignoredForums.split(',');
+	var noForumsChecked = "{{ lang('DIGESTS_NO_FORUMS_CHECKED')|escape('js') }}";
+{% endif %}
+	var ok = "{{ lang('OK')|escape('js') }}";
+	var sizeError = "{{ lang('DIGESTS_SIZE_ERROR_MIN')|escape('js') }}";
+	var sizeErrorRange = "{{ lang('DIGESTS_SIZE_ERROR')|escape('js') }}";
+</script>
+<div id="dialog"></div>
+<h2>{{ lang('DIGESTS_MODE') }}</h2>
+
+<form name="phpbbservices_digests" id="phpbbservices_digests" method="post" action="{{ U_DIGESTS_ACTION }}">
+	{{ S_FORM_TOKEN }}
+	<div class="panel">
+
+		<div class="inner">
+
+{% if S_DIGESTS_NO_TIMEZONE %}
+			<p>{{ lang('DIGESTS_NO_TIMEZONE') }}</p>
+{% endif %}
+{% if S_DIGESTS_BASICS %}
+			<p>{{ lang('DIGESTS_EXPLANATION') }}</p>
+{% endif %}
+			<fieldset>
+{% if S_DIGESTS_BASICS %}
+				<dl>
+					<dt><label>{{ lang('DIGESTS_FREQUENCY') }}{{ lang('COLON') }}</label><br><span>{{ lang('DIGESTS_FREQUENCY_EXPLAIN') }}</span></dt>
+					<dd>
+						<label for="none"><input type="radio" name="digest_type" id="none" class="top-3px" value="NONE"{% if S_DIGESTS_NONE_CHECKED %} checked="checked"{% endif %} /> {{ lang('DIGESTS_NONE') }}</label><br>
+						<label for="daily"><input type="radio" name="digest_type" id="daily" class="top-3px" value="DAY"{% if S_DIGESTS_DAY_CHECKED %} checked="checked"{% endif %} /> {{ lang('DIGESTS_DAILY') }}</label><br>
+						<label for="week"><input type="radio" name="digest_type" id="week" class="top-3px" value="WEEK"{% if S_DIGESTS_WEEK_CHECKED %} checked="checked"{% endif %} /> {{ lang('DIGESTS_WEEKLY') }}</label><br>
+						<label for="month"><input type="radio" name="digest_type" id="month" class="top-3px" value="MNTH"{% if S_DIGESTS_MONTH_CHECKED %} checked="checked"{% endif %} /> {{ lang('DIGESTS_MONTHLY') }}</label>
+					</dd>
+				</dl>
+				<dl>
+					<dt><label>{{ lang('DIGESTS_FORMAT_STYLING') }}{{ lang('COLON') }}</label><br><span>{{ lang('DIGESTS_FORMAT_STYLING_EXPLAIN') }}</span></dt>
+					<dd>
+						<label for="style1" title="{{ lang('DIGESTS_FORMAT_HTML_EXPLAIN') }}"><input type="radio" name="style" id="style1" class="top-3px" value="{{ lang('DIGESTS_HTML_VALUE') }}"{% if S_DIGESTS_HTML_CHECKED %} checked="checked"{% endif %} /> {{ lang('DIGESTS_FORMAT_HTML') }}</label><br>
+						<label for="style4" title="{{ lang('DIGESTS_FORMAT_HTML_CLASSIC_EXPLAIN') }}"><input type="radio" name="style" id="style4" class="top-3px" value="{{ lang('DIGESTS_HTML_CLASSIC_VALUE') }}"{% if S_DIGESTS_HTML_CLASSIC_CHECKED %} checked="checked"{% endif %} /> {{ lang('DIGESTS_FORMAT_HTML_CLASSIC') }}</label><br>
+						<label for="style2" title="{{ lang('DIGESTS_FORMAT_PLAIN_EXPLAIN') }}"><input type="radio" name="style" id="style2" class="top-3px" value="{{ lang('DIGESTS_PLAIN_VALUE') }}"{% if S_DIGESTS_PLAIN_CHECKED %} checked="checked"{% endif %} /> {{ lang('DIGESTS_FORMAT_PLAIN') }}</label><br>
+						<label for="style5" title="{{ lang('DIGESTS_FORMAT_PLAIN_CLASSIC_EXPLAIN') }}"><input type="radio" name="style" id="style5" class="top-3px" value="{{ lang('DIGESTS_PLAIN_CLASSIC_VALUE') }}"{% if S_DIGESTS_PLAIN_CLASSIC_CHECKED %} checked="checked"{% endif %} /> {{ lang('DIGESTS_FORMAT_PLAIN_CLASSIC') }}</label><br>
+						<label for="style3" title="{{ lang('DIGESTS_FORMAT_TEXT_EXPLAIN') }}"><input type="radio" name="style" id="style3" class="top-3px" value="{{ lang('DIGESTS_TEXT_VALUE') }}"{% if S_DIGESTS_TEXT_CHECKED %} checked="checked"{% endif %} /> {{ lang('DIGESTS_FORMAT_TEXT') }}</label>
+					</dd>
+				</dl>
+				<dl>
+					<dt><label for="send_hour">{{ lang('DIGESTS_SEND_HOUR') }}{{ lang('COLON') }}</label><br><span>{{ lang('DIGESTS_SEND_HOUR_EXPLAIN') }}</span></dt>
+					<dd>
+						<select name="send_hour" id="send_hour">
+							{% for hour_loop in loops.hour_loop %}
+							<option value="{{ hour_loop.COUNT }}"{{ hour_loop.SELECTED }}>{{ hour_loop.DISPLAY_HOUR }}</option>
+							{% endfor %}
+						</select>
+					</dd>
+				</dl>
+{% endif %}
+{% if S_DIGESTS_FORUMS_SELECTION %}
+	{% if S_DIGESTS_NO_FORUMS %}
+				<p>{{ lang('DIGESTS_NO_FORUMS_AVAILABLE') }}</p>
+	{% endif %}
+	{% if not S_DIGESTS_NO_FORUMS %}
+				<dl>
+					<dt><label>{{ lang('DIGESTS_FILTER_TYPE') }}{{ lang('COLON') }}</label></dt>
+					<dd>
+						<input type="radio" name="filtertype" id="all" value="ALL" {% if S_DIGESTS_POST_ANY %} checked="checked"{% endif %}{% if S_DIGESTS_ALL_CONTROL_DISABLED %} disabled="disabled"{% endif %} /><label for="all">{{ lang('DIGESTS_POSTS_TYPE_ANY') }}</label>
+						<input type="radio" name="filtertype" id="first" value="1ST" {% if S_DIGESTS_POST_FIRST %} checked="checked"{% endif %}{% if S_DIGESTS_FIRST_CONTROL_DISABLED %} disabled="disabled"{% endif %} /><label for="first">{{ lang('DIGESTS_POSTS_TYPE_FIRST') }}</label>
+						<input type="radio" name="filtertype" id="bookmarks" value="BM" {% if S_DIGESTS_POST_BM %} checked="checked"{% endif %}{% if S_DIGESTS_BM_CONTROL_DISABLED %} disabled="disabled"{% endif %} /><label for="bookmarks">{{ lang('DIGESTS_USE_BOOKMARKS') }}</label>
+					</dd>
+				</dl>
+				<dl>
+					<dt><label for="all_forums">{{ lang('DIGESTS_SELECT_FORUMS') }}{{ lang('COLON') }}</label><br><span>{{ lang('DIGESTS_SELECT_FORUMS_EXPLAIN') }}</span></dt>
+					<dd>
+						<input type="checkbox" name="all_forums" id="all_forums" {% if S_DIGESTS_ALL_BY_DEFAULT %} checked="checked"{% endif %}{% if S_DIGESTS_ALL_DISABLED %} disabled="disabled"{% endif %} /> <label for="all_forums"><b>{{ lang('DIGESTS_ALL_FORUMS') }}</b></label><br><br>
+						<div id="div_0">
+		{% for forums in loops.forums %}
+			{% if forums.S_DIGESTS_DIV_OPEN %}
+							<div id="{{ forums.CAT_ID }}" class="position-relative">
+			{% endif %}
+			{% if forums.S_DIGESTS_PRINT %}
+				{% if forums.S_DIGESTS_IS_FORUM %}
+								<input type="checkbox" name="forums[]" value="{{ forums.FORUM_ID }}" id="f{{ forums.FORUM_ID }}"{% if forums.S_DIGESTS_FORUM_SUBSCRIBED %} checked="checked"{% endif %}{% if forums.S_DIGESTS_FORUM_DISABLED %} disabled="disabled"{% endif %} /> <label for="f{{ forums.FORUM_ID }}">{{ forums.FORUM_PREFIX }}{{ forums.FORUM_LABEL }}{{ forums.FORUM_SUFFIX }}</label><br>
+				{% endif %}
+				{% if not forums.S_DIGESTS_IS_FORUM %}
+								<i>{{ forums.FORUM_LABEL }}</i><br>
+				{% endif %}
+			{% endif %}
+			{% if forums.S_DIGESTS_DIV_CLOSE %}
+							</div>
+			{% endif %}
+		{% endfor %}
+						</div>
+					</dd>
+				</dl>
+	{% endif %}
+{% endif %}
+{% if S_DIGESTS_POST_FILTERS %}
+				{{ DISABLED_MESSAGE }}
+				<dl>
+					<dt><label for="count_limit">{{ lang('DIGESTS_COUNT_LIMIT') }}{{ lang('COLON') }}</label><br><span>{{ lang('DIGESTS_COUNT_LIMIT_EXPLAIN') }}</span></dt>
+					<dd><input type="number" min="0" class="inputbox autowidth" name="count_limit" id="count_limit" value="{{ S_DIGESTS_MAX_ITEMS }}"{% if S_DIGESTS_CONTROL_DISABLED %} disabled="disabled"{% endif %} />
+					</dd>
+				</dl>
+				<dl>
+					<dt><label for="min_word_size">{{ lang('DIGESTS_MIN_SIZE') }}{{ lang('COLON') }}</label><br><span>{{ lang('DIGESTS_MIN_SIZE_EXPLAIN') }}</span></dt>
+					<dd><input type="number" min="0" class="inputbox autowidth" name="min_word_size" id="min_word_size" value="{{ S_DIGESTS_MIN_SIZE }}"{% if S_DIGESTS_CONTROL_DISABLED %} disabled="disabled"{% endif %} />
+					</dd>
+				</dl>
+				<dl>
+					<dt><label>{{ lang('DIGESTS_NEW_POSTS_ONLY') }}{{ lang('COLON') }}</label><br><span>{{ lang('DIGESTS_NEW_POSTS_ONLY_EXPLAIN') }}</span></dt>
+					<dd>
+						<label for="new_posts1"><input type="radio" name="new_posts" id="new_posts1" value="1"{% if S_DIGESTS_NEW_POSTS_ONLY_CHECKED_YES %} checked="checked"{% endif %}{% if S_DIGESTS_CONTROL_DISABLED %} disabled="disabled"{% endif %} /> {{ lang('YES') }}</label>
+						<label for="new_posts2"><input type="radio" name="new_posts" id="new_posts2" value="0"{% if S_DIGESTS_NEW_POSTS_ONLY_CHECKED_NO %} checked="checked"{% endif %}{% if S_DIGESTS_CONTROL_DISABLED %} disabled="disabled"{% endif %} /> {{ lang('NO') }}</label>
+					</dd>
+				</dl>
+				<dl>
+					<dt><label>{{ lang('DIGESTS_SEE_POPULAR_TOPICS_ONLY') }}{{ lang('COLON') }}</label></dt>
+					<dd>
+						<label for="popular1"><input type="radio" name="popular" id="popular1" value="1"{% if S_DIGESTS_POPULAR_CHECKED_YES %} checked="checked"{% endif %}{% if S_DIGESTS_CONTROL_DISABLED %} disabled="disabled"{% endif %} /> {{ lang('YES') }}</label>
+						<label for="popular2"><input type="radio" name="popular" id="popular2" value="0"{% if S_DIGESTS_POPULAR_CHECKED_NO %} checked="checked"{% endif %}{% if S_DIGESTS_CONTROL_DISABLED %} disabled="disabled"{% endif %} /> {{ lang('NO') }}</label>
+					</dd>
+				</dl>
+				<dl>
+					<dt><label for="popularity_size">{{ lang('DIGESTS_MIN_POPULARITY_VALUE') }}{{ lang('COLON') }}</label><br><span>{{ lang('DIGESTS_MIN_POPULARITY_VALUE_EXPLAIN') }}</span></dt>
+					<dd><input type="number" min="{{ S_DIGESTS_CONFIG_POPULARITY_SIZE }}" class="inputbox autowidth" name="popularity_size" id="popularity_size" value="{{ S_DIGESTS_POPULARITY_SIZE }}"{% if S_DIGESTS_CONTROL_DISABLED %} disabled="disabled"{% endif %} />
+					</dd>
+				</dl>
+				<dl>
+					<dt><label>{{ lang('DIGESTS_REMOVE_YOURS') }}{{ lang('COLON') }}</label></dt>
+					<dd>
+						<label for="remove_yours1"><input type="radio" name="show_mine" id="remove_yours1" value="0"{% if S_DIGESTS_REMOVE_YOURS_CHECKED_YES %} checked="checked"{% endif %}{% if S_DIGESTS_CONTROL_DISABLED %} disabled="disabled"{% endif %} /> {{ lang('YES') }}</label>
+						<label for="remove_yours2"><input type="radio" name="show_mine" id="remove_yours2" value="1"{% if S_DIGESTS_REMOVE_YOURS_CHECKED_NO %} checked="checked"{% endif %}{% if S_DIGESTS_CONTROL_DISABLED %} disabled="disabled"{% endif %} /> {{ lang('NO') }}</label>
+					</dd>
+				</dl>
+				<dl>
+					<dt><label>{{ lang('DIGESTS_FILTER_FOES') }}{{ lang('COLON') }}</label></dt>
+					<dd>
+						<label for="filter_foes1"><input type="radio" name="filter_foes" id="filter_foes1" value="1"{% if S_DIGESTS_FILTER_FOES_CHECKED_YES %} checked="checked"{% endif %}{% if S_DIGESTS_CONTROL_DISABLED %} disabled="disabled"{% endif %} /> {{ lang('YES') }}</label>
+						<label for="filter_foes2"><input type="radio" name="filter_foes" id="filter_foes2" value="0"{% if S_DIGESTS_FILTER_FOES_CHECKED_NO %} checked="checked"{% endif %}{% if S_DIGESTS_CONTROL_DISABLED %} disabled="disabled"{% endif %} /> {{ lang('NO') }}</label>
+					</dd>
+				</dl>
+				<dl>
+					<dt><label>{{ lang('DIGESTS_PRIVATE_MESSAGES_IN_DIGEST') }}{{ lang('COLON') }}</label></dt>
+					<dd>
+						<label for="pms1"><input type="radio" name="pms" id="pms1" value="1"{% if S_DIGESTS_PRIVATE_MESSAGES_IN_DIGEST_YES %} checked="checked"{% endif %}{% if S_DIGESTS_CONTROL_DISABLED %} disabled="disabled"{% endif %} /> {{ lang('YES') }}</label>
+						<label for="pms2"><input type="radio" name="pms" id="pms2" value="0"{% if S_DIGESTS_PRIVATE_MESSAGES_IN_DIGEST_NO %} checked="checked"{% endif %}{% if S_DIGESTS_CONTROL_DISABLED %} disabled="disabled"{% endif %} /> {{ lang('NO') }}</label>	&nbsp;<input type="checkbox" name="mark_read" id="mark_read"{% if S_DIGESTS_MARK_READ_CHECKED %} checked="checked"{% endif %}{% if S_DIGESTS_CONTROL_DISABLED %} disabled="disabled"{% endif %} /> <label for="mark_read">{{ lang('DIGESTS_MARK_READ') }}</label>
+					</dd>
+				</dl>
+{% endif %}
+{% if S_DIGESTS_ADDITIONAL_CRITERIA %}
+				{{ DISABLED_MESSAGE }}
+				<dl>
+					<dt><label for="sort_by">{{ lang('DIGESTS_SORT_BY') }}{{ lang('COLON') }}</label><br><span>{{ lang('DIGESTS_SORT_BY_EXPLAIN') }}</span></dt>
+					<dd>
+						<select name="sort_by" id="sort_by"{% if S_DIGESTS_CONTROL_DISABLED %} disabled="disabled"{% endif %}>
+							<option value="board"{% if S_DIGESTS_BOARD_SELECTED %} selected="selected"{% endif %}>{{ lang('DIGESTS_SORT_USER_ORDER') }}</option>
+							<option value="standard"{% if S_DIGESTS_STANDARD_SELECTED %} selected="selected"{% endif %}>{{ lang('DIGESTS_SORT_FORUM_TOPIC') }}</option>
+							<option value="standard_desc"{% if S_DIGESTS_STANDARD_DESC_SELECTED %} selected="selected"{% endif %}>{{ lang('DIGESTS_SORT_FORUM_TOPIC_DESC') }}</option>
+							<option value="postdate"{% if S_DIGESTS_POSTDATE_SELECTED %} selected="selected"{% endif %}>{{ lang('DIGESTS_SORT_POST_DATE') }}</option>
+							<option value="postdate_desc"{% if S_DIGESTS_POSTDATE_DESC_SELECTED %} selected="selected"{% endif %}>{{ lang('DIGESTS_SORT_POST_DATE_DESC') }}</option>
+						</select>
+					</dd>
+				</dl>
+				<dl>
+					<dt><label for="max_word_size">{{ lang('DIGESTS_MAX_DISPLAY_WORDS') }}{{ lang('COLON') }}</label><br><span>{{ lang('DIGESTS_MAX_DISPLAY_WORDS_EXPLAIN') }}</span></dt>
+					<dd><input type="number" class="inputbox autowidth" min="0" name="max_word_size" id="max_word_size" value="{{ DIGESTS_MAX_SIZE }}"{% if S_DIGESTS_CONTROL_DISABLED %} disabled="disabled"{% endif %} /> &nbsp;<input type="checkbox" name="no_post_text" id="no_post_text"{% if S_DIGESTS_NO_POST_TEXT_CHECKED %} checked="checked"{% endif %}{% if S_DIGESTS_CONTROL_DISABLED %} disabled="disabled"{% endif %} /> <label for="no_post_text">{{ lang('DIGESTS_NO_POST_TEXT') }}</label>
+					</dd>
+				</dl>
+				<dl>
+					<dt><label>{{ lang('DIGESTS_SEND_ON_NO_POSTS') }}{{ lang('COLON') }}</label></dt>
+					<dd>
+						<label for="send_on_no_posts1"><input type="radio" name="send_on_no_posts" id="send_on_no_posts1"{% if S_DIGESTS_SEND_ON_NO_POSTS_YES_CHECKED %} checked="checked"{% endif %}{% if S_DIGESTS_CONTROL_DISABLED %} disabled="disabled"{% endif %} value="1" /> {{ lang('YES') }}</label>
+						<label for="send_on_no_posts2"><input type="radio" name="send_on_no_posts" id="send_on_no_posts2"{% if S_DIGESTS_SEND_ON_NO_POSTS_NO_CHECKED %} checked="checked"{% endif %}{% if S_DIGESTS_CONTROL_DISABLED %} disabled="disabled"{% endif %} value="0" /> {{ lang('NO') }}</label>
+					</dd>
+				</dl>
+				<dl>
+					<dt><label>{{ lang('DIGESTS_LASTVISIT_RESET') }}{{ lang('COLON') }}</label><br><span>{{ lang('DIGESTS_LASTVISIT_RESET_EXPLAIN') }}</span></dt>
+					<dd>
+						<label for="lastvisit1"><input type="radio" name="lastvisit" id="lastvisit1" value="1"{% if S_DIGESTS_LASTVISIT_YES_CHECKED %} checked="checked"{% endif %}{% if S_DIGESTS_CONTROL_DISABLED %} disabled="disabled"{% endif %} /> {{ lang('YES') }}</label>
+						<label for="lastvisit2"><input type="radio" name="lastvisit" id="lastvisit2" value="0"{% if S_DIGESTS_LASTVISIT_NO_CHECKED %} checked="checked"{% endif %}{% if S_DIGESTS_CONTROL_DISABLED %} disabled="disabled"{% endif %} /> {{ lang('NO') }}</label>
+					</dd>
+				</dl>
+				<dl>
+					<dt><label>{{ lang('DIGESTS_SHOW_ATTACHMENTS') }}{{ lang('COLON') }}</label><br><span>{{ lang('DIGESTS_SHOW_ATTACHMENTS_EXPLAIN') }}</span></dt>
+					<dd>
+						<label for="attachments1"><input type="radio" name="attachments" id="attachments1" value="1"{% if S_DIGESTS_ATTACHMENTS_YES_CHECKED %} checked="checked"{% endif %}{% if S_DIGESTS_CONTROL_DISABLED %} disabled="disabled"{% endif %} /> {{ lang('YES') }}</label>
+						<label for="attachments2"><input type="radio" name="attachments" id="attachments2" value="0"{% if S_DIGESTS_ATTACHMENTS_NO_CHECKED %} checked="checked"{% endif %}{% if S_DIGESTS_CONTROL_DISABLED %} disabled="disabled"{% endif %} /> {{ lang('NO') }}</label>
+					</dd>
+				</dl>
+	{% if not S_DIGESTS_BLOCK_IMAGES %}
+				<dl>
+					<dt><label>{{ lang('DIGESTS_BLOCK_IMAGES') }}{{ lang('COLON') }}</label><br><span>{{ lang('DIGESTS_BLOCK_IMAGES_EXPLAIN') }}</span></dt>
+					<dd>
+						<label for="blockimages1"><input type="radio" name="blockimages" id="blockimages1" value="1"{% if S_DIGESTS_BLOCK_IMAGES_YES_CHECKED %} checked="checked"{% endif %}{% if S_DIGESTS_CONTROL_DISABLED %} disabled="disabled"{% endif %} /> {{ lang('YES') }}</label>
+						<label for="blockimages2"><input type="radio" name="blockimages" id="blockimages2" value="0"{% if S_DIGESTS_BLOCK_IMAGES_NO_CHECKED %} checked="checked"{% endif %}{% if S_DIGESTS_CONTROL_DISABLED %} disabled="disabled"{% endif %} /> {{ lang('NO') }}</label>
+					</dd>
+				</dl>
+	{% endif %}
+				<dl>
+					<dt><label>{{ lang('DIGESTS_TOC') }}{{ lang('COLON') }}</label><br><span>{{ lang('DIGESTS_TOC_EXPLAIN') }}</span></dt>
+					<dd>
+						<label for="toc1"><input type="radio" name="toc" id="toc1" value="1"{% if S_DIGESTS_TOC_YES_CHECKED %} checked="checked"{% endif %}{% if S_DIGESTS_CONTROL_DISABLED %} disabled="disabled"{% endif %} /> {{ lang('YES') }}</label>
+						<label for="toc2"><input type="radio" name="toc" id="toc2" value="0"{% if S_DIGESTS_TOC_NO_CHECKED %} checked="checked"{% endif %}{% if S_DIGESTS_CONTROL_DISABLED %} disabled="disabled"{% endif %} /> {{ lang('NO') }}</label>
+					</dd>
+				</dl>
+{% endif %}
+
+			</fieldset>
+		</div>
+
+	</div>
+
+{% if S_DIGESTS_SHOW_BUTTONS %}
+	<fieldset class="submit-buttons">
+		<input class="button2" type="reset" id="reset" name="reset" value="{{ lang('RESET') }}" />&nbsp;
+		<input class="button1" type="submit" id="submit" name="submit" value="{{ lang('SUBMIT') }}" />
+		{{ S_DIGESTS_FORM_TOKEN }}
+	</fieldset>
+{% endif %}
+
+	<div class="copyright">
+		{{ lang('POWERED_BY') }}{{ lang('DIGESTS_TRANSLATOR') }}
+	</div>
+
+</form>
+{% INCLUDE 'ucp_footer.html' %}

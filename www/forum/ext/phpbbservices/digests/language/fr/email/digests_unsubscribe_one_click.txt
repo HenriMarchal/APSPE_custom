@@ -1,7 +1,7 @@
-Dear {{ USERNAME }},
+Cher {{ USERNAME }},
 
-As requested, you are no longer subscribed to receive digests from the board {{ FORUM_NAME }}.
+Comme demandé, vous n'êtes plus inscrit pour recevoir des newsletters de {{ FORUM_NAME }}.
 
-Sincerely,
+Cordialement,
 
-{{ FORUM_NAME }} Administration Team
+L'administration de {{ FORUM_NAME }}

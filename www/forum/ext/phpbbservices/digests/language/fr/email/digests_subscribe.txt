@@ -1,9 +1,9 @@
-Dear {{ USERNAME }},
+Cher {{ USERNAME }},
 
-This is to notify you that an administrator of {{ FORUM_NAME }} has subscribed you to receive a {{ DIGESTS_TYPE }} {{ DIGESTS_FORMAT }} digest. If you do not wish to receive the digest, you can unsubscribe by selecting the digests tab in the user control panel of the forum. Once logged in, select the unsubscribe option. It is accessible through this convenient link:
+Ce message pour vous notifier qu'un administrateur de {{ FORUM_NAME }} vous a inscrit pour recevoir des newsletters à {{ DIGESTS_TYPE }} {{ DIGESTS_FORMAT }}. Si vous ne souhaitez pas recevoir de newsletters, vous pouvez vous désinscrire dans l'onglet newsletter du panneau de contrôle de l'utilisateur du forum. Il est accessible via ce lien :
 
 {{ DIGESTS_UCP_LINK }}
 
-Sincerely,
+Cordialement,
 
-{{ FORUM_NAME }} Administration Team
+L'administration de {{ FORUM_NAME }}
