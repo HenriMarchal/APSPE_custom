@@ -234,6 +234,45 @@ $template->assign_vars(array(
 	'U_MCP'				=> ($auth->acl_get('m_') || $auth->acl_getf_global('m_')) ? append_sid("{$phpbb_root_path}mcp.$phpEx", 'i=main&amp;mode=front', true, $user->session_id) : '')
 );
 
+/**
+ * Display last articles
+*/
+$sql = 'SELECT a.title, a.alias, a.is_cat, a.category_id, a.content, a.visible, a.datetime, b.category_name
+		FROM phpbb3_cmbb_article AS a, phpbb3_cmbb_category AS b
+		WHERE a.category_id=b.category_id
+		ORDER BY a.datetime DESC
+        LIMIT 0,5';
+$result = $db->sql_query($sql);
+
+while ($row = $db->sql_fetchrow($result))
+{
+	if ($row['visible'])
+	{
+		if (! $row['is_cat'])
+		{		
+			$latest[] = array(
+				'title'			 => $row['title'],
+				'alias'			 => $row['alias'],
+				'category_name'	 => $row['category_name'],
+				'exerpt'		 => substr($row['content'], 0, 350).'...',
+			);
+		}
+	}
+}
+$db->sql_freeresult($result);
+
+foreach ($latest as $row)
+{
+	$template->assign_block_vars('latest_article_feed', array(
+		'U_ARTICLE'		 => append_sid($phpbb_root_path.'article/'.$row['alias']),
+		'ARTICLE_TITLE'	 => $row['title'],
+		'CATEGORY_NAME'	 => $row['category_name'],
+		'EXERPT'   	 => $row['exerpt'],
+	));
+}
+
+
+
 $page_title = ($config['board_index_text'] !== '') ? $config['board_index_text'] : $user->lang['INDEX'];
 
 /**
