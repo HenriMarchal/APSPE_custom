@@ -1,0 +1,6 @@
+Notice pour la prochaine équipe d'administration
+
+l'extension TFA a été testée localement et en prod. Elle fonctionnement parfaitement en local mais mystérieusement non en prod.
+J'ai (mouadibs) rajouté des logs et messages d'erreur dans l'extension afin de d'enquêter sur le problème sur l'environnement de prod.
+
+Une fois le problème corrigé et l'extension retenue pour la prod, il faudra continuer de traduire l'extension dans un langage clair (car c'est une fonctionnalité complexe), et même faire un petit tuto avec capture d'écran en sujet épinglé dans le forum "infos phobiesociale.org".
