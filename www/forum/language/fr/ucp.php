@@ -514,7 +514,7 @@ $lang = array_merge($lang, [
 
 	'UCP'                         => 'Panneau de contrôle de l’utilisateur',
 	'UCP_ACTIVATE'                => 'Activer le compte',
-	'UCP_ADMIN_ACTIVATE'          => 'Veuillez noter que vous devez saisir une adresse de courriel valide afin que votre compte soit activé. Un administrateur vérifiera votre compte. S’il est approuvé, vous recevrez un courriel à l’adresse de courriel que vous avez spécifiée.',
+	'UCP_ADMIN_ACTIVATE'          => 'Veuillez noter que vous devez saisir une adresse de courriel valide afin que votre compte soit activé. Un administrateur vérifiera votre compte. S’il est approuvé, vous recevrez un courriel à l’adresse de courriel que vous avez spécifiée. Afin que votre inscription soit validée, merci de désactiver votre VPN ou proxy.',
 	'UCP_ATTACHMENTS'             => 'Pièces jointes',
 	'UCP_AUTH_LINK'               => 'Comptes externes',
 	'UCP_AUTH_LINK_ASK'           => 'Aucun compte n’est associé à ce service externe. Veuillez cliquer sur le bouton ci-dessous afin d’associer votre compte de ce forum à un compte de ce service externe.',

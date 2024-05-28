@@ -1,0 +1,1411 @@
+/*
+--------------------------------------------------------------
+Colours and backgrounds for common.css
+-------------------------------------------------------------- */
+
+html, body {
+	background-color: rgb(38, 36, 34);
+	color: rgb(255, 244, 218);
+}
+
+h1 {
+	color: rgb(247, 244, 239);
+}
+
+h2 {
+	color: rgb(237, 229, 217);
+}
+
+h3 {
+	border-bottom-color: rgb(79, 71, 63);
+	color: rgb(255, 244, 218);
+}
+
+hr {
+	border-color: rgb(84, 80, 78);
+	border-top-color: rgb(84, 80, 78);
+}
+
+/*
+--------------------------------------------------------------
+Colours and backgrounds for links.css
+-------------------------------------------------------------- */
+
+a { color: rgb(196, 217, 150); }
+a:hover { color: rgb(228, 251, 176); text-decoration: none; }
+
+/* Links on gradient backgrounds */
+.forumbg .header a, .forabg .header a, th a {
+
+}
+
+.forumbg .header a:hover, .forabg .header a:hover, th a:hover {
+	color: rgb(228, 251, 176);
+}
+
+/* Notification mark read link */
+
+.dropdown-extended a.mark_read {
+	background-color: rgb(36, 32, 28);
+}
+
+/* Post body links */
+
+.postlink {
+	color: rgb(196, 217, 150);
+}
+
+.postlink:visited {
+	color: rgb(228, 251, 176);
+}
+
+.postlink:hover {
+	color: rgb(228, 251, 176);
+	text-decoration: underline;
+}
+
+.signature a, .signature a:hover {
+	background-color: transparent;
+}
+
+/* Round cornered boxes and backgrounds
+---------------------------------------- */
+
+.wrap {
+	background-color: rgb(38, 36, 34);
+}
+
+.page-footer {
+	border-top: 1px solid rgb(79, 71, 63);
+}
+
+.forumbg {
+	background-color: rgb(38, 36, 34);
+}
+
+/*.page-header {
+	background-image: url("../../all/imgs/shutterstock-1092101591.webp");
+	background-size: cover;
+}*/
+
+.forabg {
+	background-color: rgb(38, 36, 34);
+}
+
+.top-image {
+	background-color: rgb(104, 136, 64);
+}
+
+.breadcrumbs .crumb {
+	color: rgb(196, 217, 150);
+}
+
+.post:target .content {
+}
+
+.post h3 a.first-unread,
+.post:target h3 a {
+}
+
+.bg1 {
+	background-color: rgb(45, 41, 38);
+}
+
+table.zebra-list tr:nth-child(odd) td, ul.zebra-list li:nth-child(odd) {
+	background-color: rgb(38, 36, 34);
+}
+
+.bg2 {
+	background-color: rgb(45, 41, 38);
+}
+
+table.zebra-list tr:nth-child(even) td, ul.zebra-list li:nth-child(even) {
+	background-color: rgb(2, 36, 38);
+}
+
+.bg3	{
+	background-color: rgb(38, 36, 34);
+}
+
+.site_logo {
+	background-image: url("../../all/imgs/site_logo.svg");
+}
+
+/* cmBB bg colour */
+#content_container {
+    background-color: rgb(38, 36, 34) !important;
+}
+.site-description p {
+	color: rgb(237, 229, 217);
+}
+
+h2.forum-title, h2.topic-title, h2.faq-title, h2.faq-block-title, h2.memberlist-title, h2.solo, h2.ucp-title,
+h2.searchresults-title, h2.posting-title, h2.login-title, h2.reset-password, h2.titlespace {
+	background-color: rgb(90, 113, 39);
+	border-top: 1px solid rgb(79, 71, 63);
+	border-bottom: 1px solid rgb(9, 8, 7);
+	text-shadow: 2px 1px 1px rgb(30, 26, 22);
+}
+
+.cp-main h2, h2.message-title, .panel-register h2, h2.quickreply-title, .mcp-main li.header {
+	background-color: rgb(90, 113, 39);
+}
+
+h2.faq-block-title {
+	background-color: rgb(38, 36, 34);
+}
+
+h3.review {
+	border-top: 1px solid rgb(79, 71, 63);
+	border-bottom: 1px solid rgb(9, 8, 7);
+}
+
+h2.topic-title, h2.forum-title, h2.poll-title,
+.cp-main ul.topiclist li.header,.cp-main h2, h2.quickreply-title,
+.ucp-resend h2, h2.message-title, h2.sitename-title, .panel.panel-register h2 {
+	text-shadow: 2px 1px 1px rgb(30, 26, 22);
+}
+
+fieldset.submit-buttons {
+	border-top: 1px solid rgb(79, 71, 63);
+	background-color: #2D2926;
+	padding: 10px 0;
+}
+
+.background-left-box {
+	width: 100%;
+  	display: inline-block;
+	border-top: 1px solid rgb(79, 71, 63);
+	background-color: #2D2926;
+}
+
+.button2-group {
+	padding: 10px 0;
+	margin-left: 10px;
+}
+
+fieldset.posting-edit-buttons {
+	border: 0;
+}
+
+.cp-main ul.topiclist li, .cp-main h2 {
+	border-top: 1px solid rgb(79, 71, 63);
+	border-bottom: 1px solid rgb(9, 8, 7);
+	border-right: 1px solid rgb(79, 71, 63);
+	border-left: 1px solid rgb(9, 8, 7);
+}
+
+.cp-main h3 {
+	background-color: rgb(90, 113, 39);
+	text-shadow: 2px 1px 1px rgb(30, 26, 22);
+	padding: 10px 5px 10px 5px;
+}
+
+.cp-main .action-bar {
+	border-top: 0;
+}
+
+dt.faq-row strong {
+	color: rgb(225, 207, 162);
+}
+
+.has-profile {
+	border-top-color: rgb(79, 71, 63);
+	border-bottom-color: rgb(9, 8, 7);
+}
+
+.top-action-bar {
+	border-top-color: rgb(79, 71, 63);
+	border-bottom-color: rgb(9, 8, 7);
+}
+
+.ucp-main .bar-top, .actions-jump {
+	border-top: 1px solid rgb(79, 71, 63);
+	border-bottom: 1px solid rgb(9, 8, 7);
+}
+
+.bottom-action-bar {
+	border-top-color: rgb(79, 71, 63);
+	border-bottom-color: rgb(9, 8, 7);
+}
+
+.cp-main .bottom, .cp-main .bar-top, .cp-main .panel p {
+	padding: 5px 5px;
+	border-top: 1px solid rgb(79, 71, 63) !important;
+    border-bottom: 1px solid rgb(9, 8, 7);
+    border-right: 1px solid rgb(79, 71, 63);
+    border-left: 1px solid rgb(28, 25, 22);
+}
+
+.topicreview .post {
+    border-top: 1px solid rgb(79, 71, 63);
+    border-bottom: 1px solid rgb(9, 8, 7);
+    border-right: 1px solid rgb(79, 71, 63);
+    border-left: 1px solid rgb(28, 25, 22);
+}
+
+/* Table styles
+----------------------------------------*/
+
+table.table1 thead th {
+	border-top: 1px solid rgb(79, 71, 63);
+	border-bottom: 1px solid rgb(9, 8, 7);
+	border-left: 0;
+}
+
+table.table1 tbody tr {
+	border-right: 1px solid rgb(79, 71, 63);
+	border-left: 1px solid rgb(9, 8, 7);
+}
+
+table.table1 tbody tr:hover, table.table1 tbody tr.hover {
+	background-color: rgb(51, 46, 42);
+	color: rgb(247, 227, 180);
+}
+
+table.table1 tbody td {
+	border-top: 1px solid rgb(79, 71, 63);
+	border-bottom: 1px solid rgb(9, 8, 7);
+	border-right: 1px solid rgb(79, 71, 63);
+	border-left: 1px solid rgb(9, 8, 7);
+}
+
+table.table1 tbody th {
+	color: rgb(225, 207, 162);
+}
+
+table.info tbody th {
+	color: rgb(225, 207, 162);
+}
+
+/* Misc layout styles
+---------------------------------------- */
+
+dl.details dt {
+	color: rgb(225, 207, 162);
+}
+
+dl.details dd {
+	color: rgb(225, 207, 162);
+}
+
+/* Icon styles
+---------------------------------------- */
+.icon.icon-blue, a:hover .icon.icon-blue {
+	color: #ffbf00;
+}
+
+.icon.icon-green, a:hover .icon.icon-green {
+	color: #1b9A1B;
+}
+
+.icon.icon-red, a:hover .icon.icon-red {
+	color: #BC2A4D;
+}
+
+.icon.icon-orange, a:hover .icon.icon-orange {
+	color: #FF6600;
+}
+
+.icon.icon-bluegray, a:hover .icon.icon-bluegray {
+	color: #536482;
+}
+
+.icon.icon-gray, a:hover .icon.icon-gray {
+	color: #a6db33;
+}
+
+.icon.icon-lightgray, a:hover .icon.icon-lightgray {
+	color: #e8d58d;
+}
+
+.icon.icon-black, a:hover .icon.icon-black {
+	
+}
+
+.sep {}
+
+.alert_close .icon:before {
+	background-color: rgb(219, 58, 58);
+}
+
+/* Jumpbox */
+.jumpbox .dropdown li {
+	border-top-color: rgb(45, 41, 38);
+}
+
+.jumpbox-cat-link {
+	border: none;
+	text-shadow: 1px 0px 2px rgba(0, 0, 0,0.8);
+    -webkit-box-shadow: 0px 1px 0px 1px rgba(0,0,0,.4), inset 0px 1px 0px 0px rgba(172, 159, 148, 0.4), inset 0 -1px 0px rgb(62, 56, 50);
+    -moz-box-shadow: 0px 6px 0px 1px rgba(0,0,0,.4), inset 0px 1px 0px 0px rgba(255,255,255,.4), inset 0 -1px 0px rgba(255,255,255, 0.1);
+    box-shadow: 0px 1px 0px 1px rgba(0,0,0,.4), inset 0px 1px 0px 0px rgb(102, 93, 85), inset 0 -1px 0px rgb(62, 56, 50);
+    background-color: rgb(57, 54, 50); /* Old Browser */
+    background: -moz-linear-gradient( rgb(60, 54, 49), rgba(0, 0, 0, 0.1) ), -moz-radial-gradient( center -20px, rgb(38, 36, 34), rgba(0,0,0,0) );
+    background: -webkit-linear-gradient( rgb(249, 241, 229,0.08), rgba(0,0,0,.1) ), -webkit-radial-gradient( center -10px, rgba(102,93,85,0.2), rgba(0,0,0,0) 100%);
+	border-top-color: #2D2926;
+}
+
+.jumpbox-cat-link:hover {
+	background: -moz-linear-gradient( rgba(102,93,85,0.5), rgba(0,0,0,0.3) ),
+	-moz-radial-gradient( center -20px, rgba(102,93,85,0.2), rgba(56,51,54,0.5) );
+    background: -webkit-linear-gradient( rgba(102,93,85,0.5), rgba(0,0,0,0.3) ),
+    -webkit-radial-gradient( center -10px, rgba(102,93,85,0.2), rgba(56,51,54,0.5) 100%);
+    -webkit-box-shadow: 0px 1px 0px 1px rgba(0,0,0,.4), inset 0px 1px 0px 0px rgba(172, 159, 148, 0.4), inset 0 -1px 0px rgb(62, 56, 50);
+    -moz-box-shadow: 0px 6px 0px 1px rgba(0,0,0,.4), inset 0px 1px 0px 0px rgba(255,255,255,.4), inset 0 -1px 0px rgba(255,255,255, 0.1);
+}
+
+.jumpbox-forum-link {
+	background-color: #262422;
+}
+
+.jumpbox-forum-link:hover {
+	background-color: #5B554F;
+}
+
+.jumpbox .dropdown .pointer-inner {
+	border-color: #3e3831 transparent;
+}
+
+.jumpbox-sub-link {
+	background-color: #3e3831;
+}
+
+.jumpbox-sub-link:hover {
+	background-color: #262422;
+}
+
+/* Miscellaneous styles
+---------------------------------------- */
+
+.error {
+	color: rgb(255, 61, 61);
+}
+
+.reported {
+	background-color: rgb(53, 29, 29);
+}
+
+li.reported:hover {
+	background-color: rgba(147, 55, 55, 0.61) !important;
+}
+
+div.rules {
+	background-color: #842B36;
+	border-top: 1px solid rgb(79, 71, 63);
+	border-bottom: 1px solid rgb(9, 8, 7);
+	color: #FFF;
+}
+
+div.rules a {
+	color: #FFF;
+	font-weight: bold;
+}
+
+div.rules a:hover {
+	text-decoration: underline;
+}
+
+p.post-notice {
+	background-color: rgb(53, 29, 29);
+	background-image: none;
+}
+
+p.post-notice:hover {
+	background-color: rgba(147, 55, 55, 0.61);
+}
+
+.moderator {
+	color: rgb(225, 207, 162);
+	border-top: 1px solid rgb(79, 71, 63);
+	border-bottom: 1px solid rgb(9, 8, 7);
+}
+
+/*
+--------------------------------------------------------------
+Colours and backgrounds for content.css
+-------------------------------------------------------------- */
+
+ul.forums {
+	background-color: rgb(45, 41, 38);
+}
+
+ul.topiclist li {
+	
+}
+
+ul.topiclist dd {
+	border-left-color: rgb(79, 74, 70);
+}
+
+.rtl ul.topiclist dd {
+	border-left-color: transparent;
+}
+
+li.row {
+	border-top-color: rgb(79, 74, 70);
+	border-bottom-color: rgb(23, 22, 21);
+}
+
+li.row strong {
+	color: rgb(225, 207, 162);
+}
+
+li.row:hover {
+	background-color: rgb(51, 46, 42);
+}
+
+li.row:hover dd {
+	border-left-color: rgb(108, 99, 92);
+}
+
+.rtl li.row:hover dd {
+	border-right-color: rgb(108, 99, 92);
+	border-left-color: transparent;
+}
+
+li.header dt, li.header dd {
+	color: rgb(196, 217, 150);
+}
+
+.cp-main li.header dt, .cp-main li.header dd {
+	color: rgb(255, 244, 218);
+}
+
+.forum-li-title ul.topiclist li.header {
+	padding: 8px 0;
+	height: 40px;
+	font-size: 1.300em;
+	border-top: 1px solid #4f4a46;
+	border-bottom: 1px solid rgb(9, 8, 7);
+}
+
+/* Content container styles
+----------------------------------------*/
+.content h2 {
+	background-color: rgb(90, 113, 39);
+	border-top: 1px solid rgb(79, 71, 63);
+	border-bottom: 1px solid rgb(9, 8, 7);
+}
+
+.panel h2 {
+	border-top: 1px solid rgb(79, 71, 63);
+	border-bottom: 1px solid rgb(9, 8, 7);
+}
+.posthilit {
+	background-color: #F3BFCC;
+	color: #BC2A4D;
+}
+
+/* Post signature */
+.signature {
+	border-top-color: rgb(79, 71, 63);
+}
+
+/* Post noticies */
+.notice {
+	border-top-color: rgb(79, 71, 63);
+}
+
+/* BB Code styles
+----------------------------------------*/
+/* Quote block */
+blockquote {
+	background-color: #221F1D;
+	border-color: #4D453F;
+}
+
+blockquote blockquote {
+	/* Nested quotes */
+	background-color: #2D2723;
+}
+
+blockquote blockquote blockquote {
+	/* Nested quotes */
+	background-color: #39322D;
+}
+
+blockquote cite {
+	margin-bottom: 5px;
+	border-bottom: 1px solid #4f473f;
+}
+
+/* Code block */
+.codebox {
+	background-color: #1c1a19;
+	border-color: #131110;
+}
+
+.codebox p {
+	border-bottom-color:  #48403A;
+}
+
+.codebox code {
+	color: rgb(208, 175, 112);
+}
+
+p.author {
+	border-bottom: 1px solid rgb(79, 71, 63);
+}
+
+/* Attachments
+----------------------------------------*/
+
+.attachbox {
+	background-color: rgb(38, 36, 34);
+	border-color: rgb(79, 71, 63);
+}
+
+.pm-message .attachbox {
+	background-color: rgb(38, 36, 34);
+}
+
+.attachbox dd {
+	border-top-color: rgb(79, 71, 63);
+}
+
+.attachbox p {
+	color: rgb(135, 125, 112);
+}
+
+.attachbox p.stats {
+	color: rgb(135, 125, 112);
+}
+
+.attach-image img {
+	border-color: rgb(79, 71, 63);
+}
+
+/* Inline image thumbnails */
+dl.thumbnail img {
+	background-color: rgb(38, 36, 34);
+}
+
+dl.thumbnail dt a:hover {
+	background-color: rgb(151, 130, 115);
+}
+
+dl.thumbnail dt a:hover img {
+	border-color: rgb(193, 173, 153);
+}
+
+/* Post poll styles
+----------------------------------------*/
+
+fieldset.polls dl {
+	border-top-color: #4F473F;
+}
+
+fieldset.polls dl.voted {
+	color: #a2826b;
+}
+
+fieldset.polls dd div {
+	color: #FFFFFF;
+}
+
+.rtl .pollbar1, .rtl .pollbar2, .rtl .pollbar3, .rtl .pollbar4, .rtl .pollbar5 {
+	border-right-color: transparent;
+}
+
+.pollbar1 {
+	background-color: rgb(132, 100, 76);
+	border-bottom-color: rgb(187, 156, 134);
+	border-right-color: rgb(187, 156, 134);
+}
+
+.rtl .pollbar1 {
+	border-left-color: rgb(38, 32, 24);
+}
+
+.pollbar2 {
+	background-color: rgb(132, 100, 76);
+	border-bottom-color: rgb(187, 156, 134);
+	border-right-color: rgb(187, 156, 134);
+}
+
+.rtl .pollbar2 {
+	border-left-color: rgb(38, 32, 24);
+}
+
+.pollbar3 {
+	background-color: rgb(132, 100, 76);
+	border-bottom-color: rgb(187, 156, 134);
+	border-right-color: rgb(187, 156, 134);
+}
+
+.rtl .pollbar3 {
+	border-left-color: rgb(38, 32, 24);
+}
+
+.pollbar4 {
+	background-color: rgb(132, 100, 76);
+	border-bottom-color: rgb(187, 156, 134);
+	border-right-color: rgb(187, 156, 134);
+}
+
+.rtl .pollbar4 {
+	border-left-color: rgb(38, 32, 24);
+}
+
+.pollbar5 {
+	background-color: rgb(132, 100, 76);
+	border-bottom-color: rgb(187, 156, 134);
+	border-right-color: rgb(187, 156, 134);
+}
+
+.rtl .pollbar5 {
+	border-left-color: rgb(38, 32, 24);
+}
+
+/* Poster profile block
+----------------------------------------*/
+
+.postprofile {
+	border-color: rgb(79, 71, 63);
+}
+
+.pm .postprofile {
+	border-color: rgb(79, 71, 63);
+}
+
+.postprofile strong {
+	color: rgb(225, 207, 162);
+}
+
+.online-list h3, .statistics h3, .online-list-tab h3, .birthday-list h3 {
+	color: rgb(196, 217, 150);
+	margin-top: 0.500em;
+}
+
+dd.profile-warnings {
+	color: rgb(181, 48, 64);
+}
+
+/*
+--------------------------------------------------------------
+Colours and backgrounds for buttons.css
+-------------------------------------------------------------- */
+
+.button {
+    margin: 0;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: rgb(130, 106, 88);
+    text-shadow: 1px 0px 2px rgba(0, 0, 0,0.8);
+    text-transform: uppercase;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 1px 0px 1px rgba(0,0,0,.4), inset 0px 1px 0px 0px rgba(172, 159, 148, 0.4), inset 0 -1px 0px rgb(62, 56, 50);
+    -moz-box-shadow: 0px 6px 0px 1px rgba(0,0,0,.4), inset 0px 1px 0px 0px rgba(255,255,255,.4), inset 0 -1px 0px rgba(255,255,255, 0.1);
+    box-shadow: 0px 1px 0px 1px rgba(0,0,0,.4), inset 0px 1px 0px 0px rgb(102, 93, 85), inset 0 -1px 0px rgb(62, 56, 50);
+   	background: rgb(66,57,53); /* Old browsers */
+	background: -moz-linear-gradient(top, rgb(66,57,53) 0%, rgb(37,35,33) 70%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgb(66,57,53) 0%,rgb(37,35,33) 70%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgb(66,57,53) 0%,rgb(37,35,33) 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#423935', endColorstr='#252321',GradientType=0 ); /* IE6-9 */
+}
+
+.button:hover,
+.button:focus {
+	background: -moz-linear-gradient( rgba(102,93,85,0.5), rgba(0,0,0,0.3) ),
+	-moz-radial-gradient( center -20px, rgba(102,93,85,0.2), rgba(56,51,54,0.5) );
+    background: -webkit-linear-gradient( rgba(102,93,85,0.5), rgba(0,0,0,0.3) ),
+    -webkit-radial-gradient( center -10px, rgba(102,93,85,0.2), rgba(56,51,54,0.5) 100%);
+    box-shadow: 0px 1px 0px 1px rgba(0,0,0,0.4), inset 0px 1px 0px 0px rgb(123,114,105), inset 0 -1px 0px rgba(72,55, 45,0.61);
+    -webkit-box-shadow: 0px 1px 0px 1px rgba(0,0,0,.4), inset 0px 1px 0px 0px rgb(123,114,105), inset 0 -1px 0px rgba(72,55,45,0.61);
+    -moz-box-shadow: 0px 1px 0px 1px rgba(0,0,0,.4), inset 0px 1px 0px 0px rgb(123,114,105), inset 0 -1px 0px rgba(72,55, 45,0.61);
+    color: rgb(183, 152,128);
+}
+
+.button .icon,
+.button-secondary {
+	color: rgb(130, 106, 88);
+}
+
+.button-secondary:focus,
+.button-secondary:hover,
+.button:focus .icon,
+.button:hover .icon {
+	color: rgb(183, 152, 128);
+}
+
+.button-search:hover,
+.button-search-end:hover {
+	color: rgb(183, 152, 128);
+}
+
+.caret	{ border-color: rgb(130, 106, 88); }
+.caret	{ border-color: rgb(130, 106, 88); }
+
+.contact-icons a		{ border-color: rgb(130, 106, 88); }
+.contact-icons a:hover	{ background-color: rgb(228, 251, 176);}
+
+
+a.button_mcp {
+	font-size: 11px;
+	padding: 4px 8px;
+}
+
+a.button_mcp {
+	background: inherit;
+	box-shadow: inherit;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	color: rgb(183, 166, 134);
+}
+
+a.button_mcp:hover,
+a.button_mcp:focus {
+	background: inherit;
+	box-shadow: inherit;
+	color: rgb(228, 251, 176);
+}
+
+/* Pagination
+---------------------------------------- */
+
+.pagination li a {
+	background: rgb(30, 26, 23);
+	filter: none;
+	border-color: rgb(106, 85, 71);
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	border: 1px solid #171310;
+	color: rgb(130, 106, 88);
+}
+
+.pagination li.ellipsis span {
+	background: transparent;
+}
+
+.pagination li.active span {
+	background: rgb(64, 58, 53);
+	 -webkit-box-shadow: 0px 1px 0px 1px rgba(30, 26, 23, 0.98), inset 0px 1px 0px 0px rgb(102, 93, 85), inset 0 -1px 0px rgb(77, 62, 47);
+    -moz-box-shadow: 0px 6px 0px 1px rgba(30, 26, 23, 0.98), inset 0px 1px 0px 0px rgb(102, 93, 85), inset 0 -1px 0px rgb(77, 62, 47));
+    box-shadow: 0px 1px 0px 1px rgba(30, 26, 23, 0.98), inset 0px 1px 0px 0px rgb(102, 93, 85), inset 0 -1px 0px rgb(77, 62, 47);
+	filter: none;
+	color: rgb(183, 152, 128);
+	text-shadow: none;
+}
+
+.pagination li a:hover, .pagination li a:hover .icon, .pagination .dropdown-visible a.dropdown-trigger, .nojs .pagination .dropdown-container:hover a.dropdown-trigger {
+	background: rgb(64, 58, 53);
+	border-color: rgb(106, 85, 71);
+	filter: none;
+	color: rgb(183, 152, 128);
+	text-shadow: none;
+}
+
+/* Search box
+--------------------------------------------- */
+
+.search-header .inputbox, .search-box .inputbox {
+	border-color: #3e3832;
+}
+
+.search-box .inputbox:hover, .search-header .inputbox:hover,
+.search-box .inputbox:focus {
+	border-color: #665d55;
+}
+
+.search-results li:hover,
+.search-results li.active {
+	background-color: #CFE1F6;
+}
+
+/* Icon images
+---------------------------------------- */
+
+.contact-icon						{ background-image: url("./images/icons_contact.png"); }
+
+/* Profile & navigation icons */
+.pm-icon							{ background-position: 0 0; }
+.email-icon							{ background-position: -21px 0; }
+.jabber-icon						{ background-position: -80px 0; }
+.phpbb_icq-icon						{ background-position: -61px 0 ; }
+.phpbb_wlm-icon						{ background-position: -182px 0; }
+.phpbb_aol-icon						{ background-position: -244px 0; }
+.phpbb_website-icon					{ background-position: -40px 0; }
+.phpbb_youtube-icon					{ background-position: -98px 0; }
+.phpbb_facebook-icon				{ background-position: -119px 0; }
+.phpbb_skype-icon					{ background-position: -161px 0; }
+.phpbb_twitter-icon					{ background-position: -203px 0; }
+.phpbb_yahoo-icon					{ background-position: -224px 0; }
+
+/* Forum icons & Topic icons */
+.global_read						{ background-image: url("./images/announce_read.png"); }
+.global_read_mine					{ background-image: url("./images/announce_read_mine.png"); }
+.global_read_locked					{ background-image: url("./images/announce_read_locked.png"); }
+.global_read_locked_mine			{ background-image: url("./images/announce_read_locked_mine.png"); }
+.global_unread						{ background-image: url("./images/announce_unread.png"); }
+.global_unread_mine					{ background-image: url("./images/announce_unread_mine.png"); }
+.global_unread_locked				{ background-image: url("./images/announce_unread_locked.png"); }
+.global_unread_locked_mine			{ background-image: url("./images/announce_unread_locked_mine.png"); }
+
+.announce_read						{ background-image: url("./images/announce_read.png"); }
+.announce_read_mine					{ background-image: url("./images/announce_read_mine.png"); }
+.announce_read_locked				{ background-image: url("./images/announce_read_locked.png"); }
+.announce_read_locked_mine			{ background-image: url("./images/announce_read_locked_mine.png"); }
+.announce_unread					{ background-image: url("./images/announce_unread.png"); }
+.announce_unread_mine				{ background-image: url("./images/announce_unread_mine.png"); }
+.announce_unread_locked				{ background-image: url("./images/announce_unread_locked.png"); }
+.announce_unread_locked_mine		{ background-image: url("./images/announce_unread_locked_mine.png"); }
+
+.forum_link							{ background-image: url("./images/forum_link.png"); }
+.forum_read							{ background-image: url("./images/forum_read.png"); }
+.forum_read_locked					{ background-image: url("./images/forum_read_locked.png"); }
+.forum_read_subforum				{ background-image: url("./images/forum_read_subforum.png"); }
+.forum_unread						{ background-image: url("./images/forum_unread.png"); }
+.forum_unread_locked				{ background-image: url("./images/forum_unread_locked.png"); }
+.forum_unread_subforum				{ background-image: url("./images/forum_unread_subforum.png"); }
+
+.sticky_read						{ background-image: url("./images/sticky_read.png"); }
+.sticky_read_mine					{ background-image: url("./images/sticky_read_mine.png"); }
+.sticky_read_locked					{ background-image: url("./images/sticky_read_locked.png"); }
+.sticky_read_locked_mine			{ background-image: url("./images/sticky_read_locked_mine.png"); }
+.sticky_unread						{ background-image: url("./images/sticky_unread.png"); }
+.sticky_unread_mine					{ background-image: url("./images/sticky_unread_mine.png"); }
+.sticky_unread_locked				{ background-image: url("./images/sticky_unread_locked.png"); }
+.sticky_unread_locked_mine			{ background-image: url("./images/sticky_unread_locked_mine.png"); }
+
+.topic_moved						{ background-image: url("./images/topic_moved.png"); }
+.pm_read,
+.topic_read							{ background-image: url("./images/topic_read.png"); }
+.topic_read_mine					{ background-image: url("./images/topic_read_mine.png"); }
+.topic_read_hot						{ background-image: url("./images/topic_read_hot.png"); }
+.topic_read_hot_mine				{ background-image: url("./images/topic_read_hot_mine.png"); }
+.topic_read_locked					{ background-image: url("./images/topic_read_locked.png"); }
+.topic_read_locked_mine				{ background-image: url("./images/topic_read_locked_mine.png"); }
+.pm_unread,
+.topic_unread						{ background-image: url("./images/topic_unread.png"); }
+.topic_unread_mine					{ background-image: url("./images/topic_unread_mine.png"); }
+.topic_unread_hot					{ background-image: url("./images/topic_unread_hot.png"); }
+.topic_unread_hot_mine				{ background-image: url("./images/topic_unread_hot_mine.png"); }
+.topic_unread_locked				{ background-image: url("./images/topic_unread_locked.png"); }
+.topic_unread_locked_mine			{ background-image: url("./images/topic_unread_locked_mine.png"); }
+
+/* Main CP box
+----------------------------------------*/
+
+.panel-container h3, .panel-container hr, .cp-menu hr {
+	border-color: #4f4a46;
+}
+
+.panel-container .panel li.row {
+	border-bottom-color: rgb(9, 8, 7);
+	border-top-color: rgb(79, 71, 63);
+	border-left-color: rgb(9, 8, 7);
+	border-right-color: rgb(79, 71, 63);
+}
+
+.panel-container table.table1 thead th {
+	background-color: rgb(90, 113, 39);
+	border-top: 1px solid rgb(79, 71, 63);
+	border-bottom: 1px solid rgb(9, 8, 7);
+}
+
+.cp-main .pm-message {
+	border-color: #4f4a46;
+}
+
+/* CP tabbed menu
+----------------------------------------*/
+
+.tabs .tab > a {
+	border: none;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: rgb(130, 106, 88);
+    text-shadow: 1px 0px 2px rgba(0, 0, 0,0.8);
+    text-transform: uppercase;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 1px 0px 1px rgba(0,0,0,.4), inset 0px 1px 0px 0px rgba(172, 159, 148, 0.4), inset 0 -1px 0px rgb(62, 56, 50);
+    -moz-box-shadow: 0px 6px 0px 1px rgba(0,0,0,.4), inset 0px 1px 0px 0px rgba(255,255,255,.4), inset 0 -1px 0px rgba(255,255,255, 0.1);
+    box-shadow: 0px 1px 0px 1px rgba(0,0,0,.4), inset 0px 1px 0px 0px rgb(102, 93, 85), inset 0 -1px 0px rgb(62, 56, 50);
+   	background: rgb(66,57,53); /* Old browsers */
+	background: -moz-linear-gradient(top, rgb(66,57,53) 0%, rgb(37,35,33) 70%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgb(66,57,53) 0%,rgb(37,35,33) 70%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgb(66,57,53) 0%,rgb(37,35,33) 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#423935', endColorstr='#252321',GradientType=0 ); /* IE6-9 */
+}
+
+.tabs .tab > a:hover {
+	background: -moz-linear-gradient( rgba(102,93,85,0.5), rgba(0,0,0,0.3) ),
+	-moz-radial-gradient( center -20px, rgba(102,93,85,0.2), rgba(56,51,54,0.5) );
+    background: -webkit-linear-gradient( rgba(102,93,85,0.5), rgba(0,0,0,0.3) ),
+    -webkit-radial-gradient( center -10px, rgba(102,93,85,0.2), rgba(56,51,54,0.5) 100%);
+    -webkit-box-shadow: 0px 1px 0px 1px rgba(0,0,0,.4), inset 0px 1px 0px 0px rgba(172, 159, 148, 0.4), inset 0 -1px 0px rgb(62, 56, 50);
+     -moz-box-shadow: 0px 6px 0px 1px rgba(0,0,0,.4), inset 0px 1px 0px 0px rgba(255,255,255,.4), inset 0 -1px 0px rgba(255,255,255, 0.1);
+    color: rgb(183, 152, 128);
+}
+
+.tabs .activetab > a,
+.tabs .activetab > a:hover {
+    background: -moz-linear-gradient( rgba(102,93,85,0.1), rgba(0,0,0,0.6) ),
+	-moz-radial-gradient( center -20px, rgba(102,93,85,0.1), rgba(56,51,54,0.3) );
+    background: -webkit-linear-gradient( rgba(102,93,85,0.1), rgba(0,0,0,0.6) ),
+    -webkit-radial-gradient( center -10px, rgba(102,93,85,0.1), rgba(56,51,54,0.3) 100%);
+    color: rgb(196, 217, 150);
+}
+
+.tabs .activetab > a:hover {
+	color: rgb(198, 167, 144);
+}
+
+.tabs-index .activetab > a,
+.tabs-index .activetab > a:hover {
+	color: rgb(228, 251, 176);
+}
+
+.tabs-index .activetab > a {
+	background: rgb(45, 41, 38);
+	border: none;
+}
+
+.tabs-index .activetab > a:hover {
+	color: rgb(183, 146, 118);
+}
+
+/* Mini tabbed menu used in MCP
+----------------------------------------*/
+
+.minitabs .tab > a {
+	border: none;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: rgb(130, 106, 88);
+    text-shadow: 1px 0px 2px rgba(0, 0, 0,0.8);
+    text-transform: uppercase;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 1px 0px 1px rgba(0,0,0,.4), inset 0px 1px 0px 0px rgba(172, 159, 148, 0.4), inset 0 -1px 0px rgb(62, 56, 50);
+    -moz-box-shadow: 0px 6px 0px 1px rgba(0,0,0,.4), inset 0px 1px 0px 0px rgba(255,255,255,.4), inset 0 -1px 0px rgba(255,255,255, 0.1);
+    box-shadow: 0px 1px 0px 1px rgba(0,0,0,.4), inset 0px 1px 0px 0px rgb(102, 93, 85), inset 0 -1px 0px rgb(62, 56, 50);
+    background: rgb(66,57,53); /* Old browsers */
+	background: -moz-linear-gradient(top, rgb(66,57,53) 0%, rgb(37,35,33) 70%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgb(66,57,53) 0%,rgb(37,35,33) 70%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgb(66,57,53) 0%,rgb(37,35,33) 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#423935', endColorstr='#252321',GradientType=0 ); /* IE6-9 */
+}
+
+.minitabs .activetab > a,
+.minitabs .activetab > a:hover {
+	background: -moz-linear-gradient( rgba(102,93,85,0.1), rgba(0,0,0,0.6) ),
+	-moz-radial-gradient( center -20px, rgba(102,93,85,0.1), rgba(56,51,54,0.3) );
+    background: -webkit-linear-gradient( rgba(102,93,85,0.1), rgba(0,0,0,0.6) ),
+    -webkit-radial-gradient( center -10px, rgba(102,93,85,0.1), rgba(56,51,54,0.3) 100%);
+    color: rgb(196, 217, 150);
+}
+
+.minitabs a:hover {
+	background: -moz-linear-gradient( rgba(102,93,85,0.5), rgba(0,0,0,0.3) ), -moz-radial-gradient( center -20px, rgba(102,93,85,0.2), rgba(56,51,54,0.5) );
+	background: -webkit-linear-gradient( rgba(102,93,85,0.5), rgba(0,0,0,0.3) ), -webkit-radial-gradient( center -10px, rgba(102,93,85,0.2), rgba(56,51,54,0.5) 100%);
+	-webkit-box-shadow: 0px 1px 0px 1px rgba(0,0,0,.4), inset 0px 1px 0px 0px rgba(172, 159, 148, 0.4), inset 0 -1px 0px rgb(62, 56, 50);
+	-moz-box-shadow: 0px 6px 0px 1px rgba(0,0,0,.4), inset 0px 1px 0px 0px rgba(255,255,255,.4), inset 0 -1px 0px rgba(255,255,255, 0.1);
+	color: rgb(183, 152, 128);
+}
+
+.minitabs .activetab > a:hover {
+	color: rgb(183, 152, 128);
+}
+
+/* Responsive tabs
+----------------------------------------*/
+
+.responsive-tab .responsive-tab-link:before {
+	border-color: rgb();
+}
+
+.responsive-tab .responsive-tab-link:hover:before {
+	border-color: rgb(228, 251, 176);
+}
+
+/* UCP navigation menu
+----------------------------------------*/
+
+/* Link styles for the sub-section links */
+.navigation a {
+	border: none;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: rgb(130, 106, 88);
+    text-shadow: 1px 0px 2px rgba(0, 0, 0,0.8);
+    text-transform: uppercase;
+    -webkit-box-shadow: 0px 1px 0px 1px rgba(0,0,0,.4), inset 0px 1px 0px 0px rgba(172, 159, 148, 0.4), inset 0 -1px 0px rgb(62, 56, 50);
+    -moz-box-shadow: 0px 6px 0px 1px rgba(0,0,0,.4), inset 0px 1px 0px 0px rgba(255,255,255,.4), inset 0 -1px 0px rgba(255,255,255, 0.1);
+    box-shadow: 0px 1px 0px 1px rgba(0,0,0,.4), inset 0px 1px 0px 0px rgb(79, 71, 63), inset 0 -1px 0px rgb(62, 56, 50);
+    background: rgb(66,57,53); /* Old browsers */
+	background: -moz-linear-gradient(top, rgb(66,57,53) 0%, rgb(37,35,33) 70%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgb(66,57,53) 0%,rgb(37,35,33) 70%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgb(66,57,53) 0%,rgb(37,35,33) 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#423935', endColorstr='#252321',GradientType=0 ); /* IE6-9 */
+}
+
+.rtl .navigation a {
+	border: none;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: rgb(130, 106, 88);
+    text-shadow: 1px 0px 2px rgba(0, 0, 0,0.8);
+    text-transform: uppercase;
+    -webkit-box-shadow: 0px 1px 0px 1px rgba(0,0,0,.4), inset 0px 1px 0px 0px rgba(172, 159, 148, 0.4), inset 0 -1px 0px rgb(62, 56, 50);
+    -moz-box-shadow: 0px 6px 0px 1px rgba(0,0,0,.4), inset 0px 1px 0px 0px rgba(255,255,255,.4), inset 0 -1px 0px rgba(255,255,255, 0.1);
+    box-shadow: 0px 1px 0px 1px rgba(0,0,0,.4), inset 0px 1px 0px 0px rgb(102, 93, 85), inset 0 -1px 0px rgb(62, 56, 50);
+   	background: rgb(66,57,53); /* Old browsers */
+	background: -moz-linear-gradient(top, rgb(66,57,53) 0%, rgb(37,35,33) 70%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgb(66,57,53) 0%,rgb(37,35,33) 70%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgb(66,57,53) 0%,rgb(37,35,33) 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#423935', endColorstr='#252321',GradientType=0 ); /* IE6-9 */
+}
+
+.navigation a:hover {
+	background: -moz-linear-gradient( rgba(102,93,85,0.5), rgba(0,0,0,0.3) ),
+	-moz-radial-gradient( center -20px, rgba(102,93,85,0.2), rgba(56,51,54,0.5) );
+    background: -webkit-linear-gradient( rgba(102,93,85,0.5), rgba(0,0,0,0.3) ),
+    -webkit-radial-gradient( center -10px, rgba(102,93,85,0.2), rgba(56,51,54,0.5) 100%);
+    -webkit-box-shadow: 0px 1px 0px 1px rgba(0,0,0,.4), inset 0px 1px 0px 0px rgba(172, 159, 148, 0.4), inset 0 -1px 0px rgb(62, 56, 50);
+     -moz-box-shadow: 0px 6px 0px 1px rgba(0,0,0,.4), inset 0px 1px 0px 0px rgba(255,255,255,.4), inset 0 -1px 0px rgba(255,255,255, 0.1);
+    color: rgb(183, 152, 128);
+}
+
+.navigation .active-subsection a {
+	background: -moz-linear-gradient( rgba(102,93,85,0.01), rgba(0,0,0,0.8) ), 
+	-moz-radial-gradient( center -20px, rgba(102,93,85,0.01), rgba(56,51,54,0.01) );
+	background: -webkit-linear-gradient( rgba(102,93,85,0.01), rgba(0,0,0,0.8) ), 
+	-webkit-radial-gradient( center -10px, rgba(102,93,85,0.01), rgba(56,51,54,0.01) 100%);
+	color: rgb(196, 217, 150);
+}
+
+.navigation .active-subsection a:hover {
+	color: rgb(183, 146, 118);
+}
+
+/* Preferences pane layout
+----------------------------------------*/
+
+.panel {
+	border-top: 1px solid rgb(79, 71, 63);
+	border-bottom: 1px solid rgb(9, 8, 7);
+}
+
+.panel-container h2 {
+	
+}
+
+.panel-container .panel {
+	background-color: rgb(45, 41, 38);
+}
+
+.cp-main .pm {
+	background-color: rgb(45, 41, 38);
+}
+
+/* Friends list */
+
+.cp-mini {
+	background: rgb(66,57,53); /* Old browsers */
+	background: -moz-linear-gradient(top, rgb(66,57,53) 0%, rgb(37,35,33) 70%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgb(66,57,53) 0%,rgb(37,35,33) 70%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgb(66,57,53) 0%,rgb(37,35,33) 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#423935', endColorstr='#252321',GradientType=0 ); /* IE6-9 */
+	 -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 1px 0px 1px rgba(0,0,0,.4), inset 0px 1px 0px 0px rgba(172, 159, 148, 0.4), inset 0 -1px 0px rgb(62, 56, 50);
+    -moz-box-shadow: 0px 6px 0px 1px rgba(0,0,0,.4), inset 0px 1px 0px 0px rgba(255,255,255,.4), inset 0 -1px 0px rgba(255,255,255, 0.1);
+    box-shadow: 0px 1px 0px 1px rgba(0,0,0,.4), inset 0px 1px 0px 0px rgb(102, 93, 85), inset 0 -1px 0px rgb(62, 56, 50);
+}
+
+/* PM Styles
+----------------------------------------*/
+/* PM Message history */
+
+.current {
+	color: #fff !important;
+}
+
+/* PM marking colours */
+.pmlist li.pm_message_reported_colour, .pm_message_reported_colour {
+	border-left-color: rgb(188, 33, 54);
+	border-right-color: rgb(188, 33, 54);
+}
+
+.pmlist li.pm_marked_colour, .pm_marked_colour {
+	border-color: rgb(253, 85, 45);
+}
+
+.pmlist li.pm_replied_colour, .pm_replied_colour {
+	border-color: rgb(185, 133, 87);
+}
+
+.pmlist li.pm_friend_colour, .pm_friend_colour {
+	border-color: rgb(176, 214, 87);
+}
+
+.pmlist li.pm_foe_colour, .pm_foe_colour {
+	border-color: rgb(21, 14, 11);
+}
+
+/* Avatar gallery */
+
+.gallery label {
+	background: rgb(123, 102, 79);
+	border-color: rgb(23, 20, 17);
+}
+
+.gallery label:hover {
+	background-color: rgb(140, 121, 101);
+}
+
+/*
+--------------------------------------------------------------
+Colours and backgrounds for forms.css
+-------------------------------------------------------------- */
+
+/* General form styles
+----------------------------------------*/
+
+select {
+	border-color: rgb(57, 53, 51);
+	background-color: rgb(28, 26, 24);
+	color: rgb(225, 207, 162);
+}
+
+label {
+	color: rgb(225, 207, 162);
+}
+
+option.disabled-option {
+	color: graytext;
+}
+
+/* Definition list layout for forms
+---------------------------------------- */
+
+dd label {
+	color: rgb(225, 207, 162);
+}
+
+fieldset.fields1 {
+	background-color: transparent;
+}
+
+/* Hover effects */
+fieldset dl:hover dt label {
+	color: rgb(166, 153, 119);
+}
+
+fieldset.fields2 dl:hover dt label {
+	color: inherit;
+}
+
+/* Quick-login on index page */
+fieldset.quick-login input.inputbox {
+	background-color: rgb(28, 26, 24);
+}
+
+fieldset.display-options, fieldset.display-actions {
+	border-top: 1px solid rgb(79, 71, 63);
+	border-bottom: 1px solid rgb(9, 8, 7);
+}
+
+/* Posting page styles
+----------------------------------------*/
+
+.message-box textarea {
+	color: rgb(244, 228, 215);
+}
+
+.message-box textarea.drag-n-drop {
+	outline-color: rgba(102, 102, 102, 0.5);
+}
+
+.message-box textarea.drag-n-drop-highlight {
+	outline-color: rgba(17, 163, 234, 0.5);
+}
+
+/* Input field styles
+---------------------------------------- */
+
+.inputbox {
+	background-color: rgb(28, 26, 24);
+	border-color: rgb(57, 53, 51);
+	color: rgb(255, 244, 218);
+}
+
+.inputbox:-moz-placeholder {
+	color: rgb(255, 244, 218);
+}
+
+.inputbox::-webkit-input-placeholder {
+	color: rgb(255, 244, 218);
+}
+
+.inputbox:hover {
+	border-color: rgb(102, 93, 85);
+}
+
+.inputbox:focus {
+	border-color: rgb(102, 93, 85);
+}
+
+.inputbox:focus:-moz-placeholder {
+	color: transparent;
+}
+
+.inputbox:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+
+input[type="number"] {
+    background-color: #1C1A18;
+    color: rgb(225, 207, 162);
+    border: 1px solid rgb(57, 53, 51);
+}
+
+/* Form button styles
+---------------------------------------- */
+
+a.button1, input.button1, input.button3, a.button2, input.button2 {
+    margin: 0;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: rgb(130, 106, 88);
+    text-shadow: 1px 0px 2px rgba(0, 0, 0,0.8);
+    text-transform: uppercase;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 1px 0px 1px rgba(0,0,0,.4), inset 0px 1px 0px 0px rgba(172, 159, 148, 0.4), inset 0 -1px 0px rgb(62, 56, 50);
+    -moz-box-shadow: 0px 6px 0px 1px rgba(0,0,0,.4), inset 0px 1px 0px 0px rgba(255,255,255,.4), inset 0 -1px 0px rgba(255,255,255, 0.1);
+    box-shadow: 0px 1px 0px 1px rgba(0,0,0,.4), inset 0px 1px 0px 0px rgb(102, 93, 85), inset 0 -1px 0px rgb(62, 56, 50);
+    background: rgb(66,57,53); /* Old browsers */
+	background: -moz-linear-gradient(top, rgb(66,57,53) 0%, rgb(37,35,33) 70%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgb(66,57,53) 0%,rgb(37,35,33) 70%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgb(66,57,53) 0%,rgb(37,35,33) 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#423935', endColorstr='#252321',GradientType=0 ); /* IE6-9 */
+}
+
+input.button8 {
+	padding: 2px 5px;
+}
+
+input.button6, input.button7, input.button8 {
+	background-image: none;
+	background-color: rgb(57, 54, 50);
+}
+
+input.button6:hover, input.button7:hover, input.button8:hover {
+	background-image: none;
+	background-color: rgb(57, 54, 50);
+}
+
+input.button3 {
+	background-image: none;
+}
+
+/* Hover states */
+
+a.button1:hover, input.button1:hover, a.button2:hover, input.button2:hover, input.button3:hover {
+	background: -moz-linear-gradient( rgba(102,93,85,0.5), rgba(0,0,0,0.3) ),
+	-moz-radial-gradient( center -20px, rgba(102,93,85,0.2), rgba(56,51,54,0.5) );
+    background: -webkit-linear-gradient( rgba(102,93,85,0.5), rgba(0,0,0,0.3) ),
+    -webkit-radial-gradient( center -10px, rgba(102,93,85,0.2), rgba(56,51,54,0.5) 100%);
+    color: rgb(183, 152, 128);
+}
+
+/* Focus states */
+
+input.button1:focus, input.button2:focus, input.button3:focus {
+	background: -moz-linear-gradient( rgba(102,93,85,0.5), rgba(0,0,0,0.3) ),
+	-moz-radial-gradient( center -20px, rgba(102,93,85,0.2), rgba(56,51,54,0.5) );
+    background: -webkit-linear-gradient( rgba(102,93,85,0.5), rgba(0,0,0,0.3) ),
+    -webkit-radial-gradient( center -10px, rgba(102,93,85,0.2), rgba(56,51,54,0.5) 100%);
+    color: rgb(183, 152, 128);
+}
+
+input.disabled {
+	color: rgb(68, 60, 53);
+}
+
+/* jQuery popups
+---------------------------------------- */
+
+.phpbb_alert {
+    background-color: rgb(40, 36, 32);
+	border-color: rgb(104, 94, 83);
+}
+.darken {
+	background-color: #0f0f0f;
+}
+
+.loading_indicator {
+	background-image: url("./images/loading.gif");
+}
+
+.dropdown-extended ul li {
+	border-top-color: rgb(79, 74, 70) !important;
+	border-bottom-color: rgb(23, 22, 21);
+}
+
+.dropdown-extended ul li:hover {
+	background-color: rgb(51, 46, 42);
+}
+
+.dropdown-extended .footer {
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: rgb(79, 74, 70);
+}
+
+.dropdown .pointer {
+	border-color: rgb(96, 79, 68) transparent;
+}
+
+.dropdown .pointer-inner {
+	border-color: rgb(38, 36, 34) transparent;
+}
+
+.dropdown-extended .pointer-inner {
+	border-color: rgb(38, 36, 34) transparent;
+}
+
+.dropdown .dropdown-contents {
+	background: rgb(38, 36, 34);
+	border-color: rgb(79, 68, 58);
+	box-shadow: 1px 1px 3px rgb(83, 68, 57);
+}
+
+.dropdown-up .dropdown-contents {
+	box-shadow: 1px 1px 3px rgb(83, 68, 57);
+}
+
+.dropdown li, .dropdown li li {
+	border-color: rgb(79, 68, 58);
+}
+
+.dropdown li.separator {
+	border-color: rgb(79, 68, 58);
+}
+
+/* Notifications
+---------------------------------------- */
+
+.notification_list p.notification-time {
+	color: rgb(237, 226, 218)
+}
+
+li.notification-reported strong, li.notification-disapproved strong {
+	color: rgb(211, 17, 65);
+}
+
+.badge {
+	background-color: rgb(218, 236, 90);
+	color: rgb(211, 17, 65);
+}

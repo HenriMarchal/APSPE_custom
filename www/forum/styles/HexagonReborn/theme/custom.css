@@ -1,0 +1,487 @@
+h3 {
+    border-color: #HEXCODEOFYOURCOLOR;
+}
+
+hr {
+	border-color: #HEXCODEOFYOURCOLOR;
+}
+
+a:hover { 
+	color: #HEXCODEOFYOURCOLOR;
+}
+
+.forumbg .header a:hover, .forabg .header a:hover, th a:hover {
+	color: #HEXCODEOFYOURCOLOR;
+}
+
+.postlink {
+	border-bottom-color: #HEXCODEOFYOURCOLOR;
+    color: #HEXCODEOFYOURCOLOR;
+}
+
+.top i {
+	color: #HEXCODEOFYOURCOLOR;
+}
+
+.arrow-left:hover, .arrow-right:hover {
+	color: #HEXCODEOFYOURCOLOR;
+}
+
+.wrap {
+	border-color: #HEXCODEOFYOURCOLOR;
+}
+
+ul.navlinks {
+	border-top: 1px solid #HEXCODEOFYOURCOLOR;
+}
+
+table.table1 tbody th {
+	border-bottom-color: #HEXCODEOFYOURCOLOR;
+}
+
+dl.details dt {
+	color: #HEXCODEOFYOURCOLOR;
+}
+
+.sep {
+	color: #HEXCODEOFYOURCOLOR;
+}
+
+.icon.icon-red, a:hover .icon.icon-red{
+	color: #HEXCODEOFYOURCOLOR;
+}
+
+.icon.icon-black, a:hover .icon.icon-black{
+	color: #HEXCODEOFYOURCOLOR;
+}
+
+.jumpbox .dropdown li {
+	border-top-color: #HEXCODEOFYOURCOLOR;
+}
+
+.jumpbox-cat-link:hover {
+	background-color: #HEXCODEOFYOURCOLOR;
+}
+
+.jumpbox .dropdown .pointer-inner {
+	border-color: #HEXCODEOFYOURCOLOR transparent;
+}
+
+.copyright {
+	color: #HEXCODEOFYOURCOLOR;
+}
+
+div.rules {
+    background-color: #HEXCODEOFYOURCOLOR;
+}
+
+ul.topiclist dd {
+	border-left-color: #HEXCODEOFYOURCOLOR;
+}
+
+li.row strong {
+	color: #HEXCODEOFYOURCOLOR;
+}
+
+.rtl li.row:hover dd {
+	border-right-color: #HEXCODEOFYOURCOLOR;
+}
+
+.content h2, .panel h2 {
+    border-bottom-color: #HEXCODEOFYOURCOLOR;
+}
+
+dl.faq dt {
+	color: #HEXCODEOFYOURCOLOR;
+}
+
+.posthilit {
+	background-color: #HEXCODEOFYOURCOLOR;
+}
+
+/* Post signature */
+.signature {
+	border-top-color: #HEXCODEOFYOURCOLOR;
+}
+
+/* Post noticies */
+.notice {
+	border-top-color:  #HEXCODEOFYOURCOLOR;
+}
+
+/* BB Code styles
+----------------------------------------*/
+/* Quote block */
+blockquote {
+    border-color: #HEXCODEOFYOURCOLOR;
+}
+
+/* Code block */
+.codebox {
+	border-color: #HEXCODEOFYOURCOLOR;
+}
+
+.codebox p {
+	border-bottom-color:  #HEXCODEOFYOURCOLOR;
+}
+
+.attachbox {
+    border-color: #HEXCODEOFYOURCOLOR;
+}
+
+.attach-image img {
+	border-color: #HEXCODEOFYOURCOLOR;	
+}
+
+dl.thumbnail img {
+	border-color: #HEXCODEOFYOURCOLOR;
+}
+
+dl.thumbnail dt a:hover img {
+	border-color: #HEXCODEOFYOURCOLOR;
+}
+
+fieldset.polls dl {
+	border-top-color: #HEXCODEOFYOURCOLOR;
+}
+
+fieldset.polls dl.voted {
+	color: #HEXCODEOFYOURCOLOR;
+}
+
+.pollbar1 {
+	background-color: #HEXCODEOFYOURCOLOR;
+}
+
+.postprofile {
+	border-color: #HEXCODEOFYOURCOLOR;
+}
+
+.pm .postprofile {
+	border-color: #HEXCODEOFYOURCOLOR;
+}
+
+.postprofile strong {
+	color: #HEXCODEOFYOURCOLOR;
+}
+
+.online {
+
+    border-right: 5px solid #HEXCODEOFYOURCOLOR;
+}
+
+.button:hover,
+.button:focus ,
+.button:active{
+	text-shadow: 0px 0px 10px #HEXCODEOFYOURCOLOR;
+}
+
+.button-search:hover,
+.button-search-end:hover {
+	border-color: #HEXCODEOFYOURCOLOR;
+}
+
+.pagination li.ellipsis span {
+    color: #HEXCODEOFYOURCOLOR;
+}
+
+.pagination li.active span {
+    border-color: #HEXCODEOFYOURCOLOR;
+}
+
+.panel-container h3, .panel-container hr, .cp-menu hr {
+	border-color: #HEXCODEOFYOURCOLOR;
+}
+
+.cp-main .pm-message {
+	border-color: #HEXCODEOFYOURCOLOR;
+}
+
+.tabs .tab > a:hover {
+	background: #HEXCODEOFYOURCOLOR;
+}
+
+.tabs .activetab > a,
+.tabs .activetab > a:hover {
+    background-color: #HEXCODEOFYOURCOLOR;
+    border-color: #HEXCODEOFYOURCOLOR;
+}
+
+.minitabs .activetab > a,
+.minitabs .activetab > a:hover {
+    background-color: #HEXCODEOFYOURCOLOR;
+}
+
+.responsive-tab .responsive-tab-link:before {
+	border-color: #HEXCODEOFYOURCOLOR;
+}
+
+.responsive-tab .responsive-tab-link:hover:before {
+	border-color: #HEXCODEOFYOURCOLOR;
+}
+
+.rtl .navigation a {
+	background: #HEXCODEOFYOURCOLOR;
+}
+
+.navigation a:hover {
+	background: #HEXCODEOFYOURCOLOR;
+}
+
+.navigation .active-subsection a {
+	background: #HEXCODEOFYOURCOLOR !important;
+}
+
+.gallery label {
+    border-color: #HEXCODEOFYOURCOLOR;
+}
+
+select {
+	border-color: #HEXCODEOFYOURCOLOR;
+    color: #HEXCODEOFYOURCOLOR;
+}
+
+fieldset dl:hover dt label {
+	color: #HEXCODEOFYOURCOLOR;
+}
+
+.inputbox:hover {
+	box-shadow: 0 0 4px #HEXCODEOFYOURCOLOR;
+}
+
+.inputbox:focus {
+	box-shadow: 0 0 4px #HEXCODEOFYOURCOLOR;
+}
+
+a.button1, input.button1, input.button3, a.button2, input.button2 {
+    background-color: #HEXCODEOFYOURCOLOR;
+}
+
+a.button1, input.button1 {
+	border-color: #HEXCODEOFYOURCOLOR;
+}
+
+/* Alternative button */
+a.button2, input.button2, input.button3 {
+	border-color: #HEXCODEOFYOURCOLOR;
+}
+
+a.button1:hover, input.button1:hover, a.button2:hover, input.button2:hover, input.button3:hover {
+	color: #HEXCODEOFYOURCOLOR;
+}
+
+/* Focus states */
+input.button1:focus, input.button2:focus, input.button3:focus {
+	border-color: #HEXCODEOFYOURCOLOR;
+}
+
+.phpbb_alert {
+    border-color: #HEXCODEOFYOURCOLOR;
+}
+
+.dropdown-extended ul li {
+	border-top-color: #HEXCODEOFYOURCOLOR;
+}
+
+.dropdown-extended ul li:hover {
+	color: #HEXCODEOFYOURCOLOR;
+}
+
+.dropdown-extended .header, .dropdown-extended .footer {
+	border-color: #HEXCODEOFYOURCOLOR;
+
+}
+
+.dropdown .pointer-inner {
+	border-color: #HEXCODEOFYOURCOLOR transparent;
+}
+
+.dropdown-extended .pointer-inner {
+    border-color: #HEXCODEOFYOURCOLOR transparent;
+}
+
+.dropdown .dropdown-contents {
+    border-top: 2px solid #HEXCODEOFYOURCOLOR;
+}
+
+.dropdown-up .dropdown-contents {
+    border-color: #HEXCODEOFYOURCOLOR;
+}
+
+.dropdown li, .dropdown li li {
+	border-color: #HEXCODEOFYOURCOLOR;
+}
+
+.dropdown li.separator {
+	border-color: #HEXCODEOFYOURCOLOR;
+}
+
+.badge {
+	background-color: #HEXCODEOFYOURCOLOR;
+}
+/* Hex
+---------------------------------------- */
+.dropdown-contents a:hover {
+    color: #HEXCODEOFYOURCOLOR;	
+}
+
+.profile-left {
+	border-color: #HEXCODEOFYOURCOLOR;
+}
+
+@media (max-width: 700px){	
+	.inputbox {
+    border: 1px solid #HEXCODEOFYOURCOLOR;
+	}
+}
+.smiley-box:hover {
+    border: 1px dashed #HEXCODEOFYOURCOLOR;
+}
+@media (max-width: 700px)
+{	
+	.smiley-box {
+    border: 1px dashed #HEXCODEOFYOURCOLOR;
+	}
+}
+.pagination .button:hover,
+.pagination .button:focus,
+.pagination .button:active {
+    background-color: #HEXCODEOFYOURCOLOR;
+}
+a.responsive-tab-link.dropdown-toggle:active{
+	border: 1px solid #HEXCODEOFYOURCOLOR;	
+}
+.header{
+	border-bottom: 4px solid #HEXCODEOFYOURCOLOR;	
+}
+.global_unread:before,
+.global_unread_mine:before,
+.announce_unread:before,
+.announce_unread_mine:before,
+.sticky_unread:before,
+.sticky_unread_mine:before,
+.global_unread_locked:before,
+.global_unread_locked_mine:before,
+.announce_unread_locked:before,
+.announce_unread_locked_mine:before,
+.forum_unread_locked:before,
+.topic_unread_locked:before,
+.topic_unread_locked_mine:before,
+.forum_link:before,
+.forum_unread:before,
+.forum_unread_subforum:before,
+.topic_unread:before,
+.topic_unread_mine:before,
+.sticky_unread_locked:before,
+.sticky_unread_locked_mine:before,
+.topic_unread_hot:before,
+.topic_unread_hot_mine:before,
+.pm_unread:before,
+.forum_read_subforum:after,
+.forum_read_locked:after,
+.global_read_locked:after,
+.global_read_locked_mine:after,
+.announce_read_locked:after,
+.announce_read_locked_mine:after,
+.sticky_read_locked:after,
+.sticky_read_locked_mine:after,
+.topic_read_locked:after,
+.topic_read_locked_mine:after,
+.contact-icon:before
+ { 
+	color: #HEXCODEOFYOURCOLOR; 
+}
+
+.custombbcode {
+    background-color: #HEXCODEOFYOURCOLOR;
+}
+.custombbcode:hover, .custombbcode:active, .custombbcode:focus {
+    background-color: #HEXCODEOFYOURCOLOR;
+    box-shadow: 0 0 4px #HEXCODEOFYOURCOLOR;
+}
+
+.badge:before {
+    border-bottom: 7.22px solid #HEXCODEOFYOURCOLOR;
+}
+.badge:after {
+    border-top: 7.22px solid #HEXCODEOFYOURCOLOR;
+}
+.pagination .button {
+    background-color: #HEXCODEOFYOURCOLOR;
+}
+.pagination .button:before {
+    border-bottom: 9.24px solid #HEXCODEOFYOURCOLOR;
+}
+.pagination .button:after {
+    border-top: 9.24px solid #HEXCODEOFYOURCOLOR;
+}
+.pagination li.active span {
+	color: #HEXCODEOFYOURCOLOR;	
+}
+.row .pagination li a {
+    background-color: #HEXCODEOFYOURCOLOR;
+}
+.row .pagination li a:before {
+    border-bottom: 6.35px solid #HEXCODEOFYOURCOLOR;
+}
+.row .pagination li a:after {
+    border-top: 6.35px solid #HEXCODEOFYOURCOLOR;
+}
+.icon, .button .icon, blockquote cite:before, .uncited:before {
+	 color: #HEXCODEOFYOURCOLOR;
+}
+dd input, dd textarea {
+    border: 1px solid #HEXCODEOFYOURCOLOR;		
+}
+
+.minitabs .tab > a:hover {
+	background-color: #HEXCODEOFYOURCOLOR;
+}
+
+.button:before {
+    color: #HEXCODEOFYOURCOLOR;
+
+}
+
+a:hover,
+a:focus,
+a:active {
+	color: #HEXCODEOFYOURCOLOR;
+}
+/* Adjust these colors appropriately or use the same color as above */
+.postlink:visited {
+	
+    color: #d49451;
+}
+
+.icon.icon-orange, a:hover .icon.icon-orange{
+	color: #FF6600;
+}
+
+.jumpbox-cat-link {
+	background-color: #bd6200;
+}
+
+.pollbar2 {
+	background-color: #f38005;
+}
+
+.pollbar3 {
+	background-color: #ef7f07;
+}
+
+.pollbar4 {
+	background-color: #cd6907;
+}
+
+.pollbar5 {
+	background-color: #c56907;
+}
+/*----------------------------*/
+.site_logo {
+	background-image: url("../../all/imgs/site_logo.svg");
+}
+
+.loading_indicator {
+	background-image: url("./images/loading.gif");
+}

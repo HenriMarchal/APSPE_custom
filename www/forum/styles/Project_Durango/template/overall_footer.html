@@ -1,0 +1,214 @@
+		{% EVENT overall_footer_content_after %}
+	</div>
+
+{% EVENT overall_footer_page_body_after %}
+
+<div id="page-footer" class="page-footer" role="contentinfo">
+	{% INCLUDE 'navbar_footer.html' %}
+
+	<div class="copyright" role="menu">
+		{% EVENT overall_footer_copyright_prepend %}
+		<br><strong><span>*</span>{T_THEME_NAME} style by <a href="https://twitter.com/MannixMD">MannixMD</a></strong>			
+		<br><strong><span>*</span>Style Version: 1.1.12</strong>			
+		<p class="footer-row">
+			<span class="footer-copyright">{{ CREDIT_LINE }}</span>
+		</p>
+		{% if TRANSLATION_INFO %}
+		<p class="footer-row">
+			<span class="footer-copyright">{{ TRANSLATION_INFO }}</span>
+		</p>
+		{% endif %}
+		{% EVENT overall_footer_copyright_append %}
+		<p class="footer-row" role="menu">
+			<a class="footer-link" href="{{ U_PRIVACY }}" title="{{ lang('PRIVACY_LINK') }}" role="menuitem">
+				<span class="footer-link-text">{{ lang('PRIVACY_LINK') }}</span>
+			</a>
+			|
+			<a class="footer-link" href="{{ U_TERMS_USE }}" title="{{ lang('TERMS_LINK') }}" role="menuitem">
+				<span class="footer-link-text">{{ lang('TERMS_LINK') }}</span>
+			</a>
+		</p>
+		<p class="footer-row">
+			<span class="footer-copyright">© phobiesociale.org 2024</span>
+		</p>
+		{% if DEBUG_OUTPUT %}
+		<p class="footer-row">
+			<span class="footer-info">{{ DEBUG_OUTPUT }}</span>
+		</p>
+		{% endif %}
+		{% if U_ACP %}
+		<p class="footer-row">
+			<a class="footer-link text-strong" href="{{ U_ACP }}">{{ lang('ACP') }}</a>
+		</p>
+		{% endif %}
+	</div>
+
+	<div id="darkenwrapper" class="darkenwrapper" data-ajax-error-title="{{ lang('AJAX_ERROR_TITLE') }}" data-ajax-error-text="{{ lang('AJAX_ERROR_TEXT') }}" data-ajax-error-text-abort="{{ lang('AJAX_ERROR_TEXT_ABORT') }}" data-ajax-error-text-timeout="{{ lang('AJAX_ERROR_TEXT_TIMEOUT') }}" data-ajax-error-text-parsererror="{{ lang('AJAX_ERROR_TEXT_PARSERERROR') }}">
+		<div id="darken" class="darken">&nbsp;</div>
+	</div>
+
+	<div id="phpbb_alert" class="phpbb_alert" data-l-err="{{ lang('ERROR') }}" data-l-timeout-processing-req="{{ lang('TIMEOUT_PROCESSING_REQ') }}">
+		<a href="#" class="alert_close">
+			<i class="icon fa-times-circle fa-fw" aria-hidden="true"></i>
+		</a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+	</div>
+	<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="#" class="alert_close">
+			<i class="icon fa-times-circle fa-fw" aria-hidden="true"></i>
+		</a>
+		<div class="alert_text"></div>
+	</div>
+</div>
+
+</div>
+
+<div>
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	{% if not S_IS_BOT %}{{ RUN_CRON_TASK }}{% endif %}
+</div>
+
+<script src="{{ T_JQUERY_LINK }}"></script>
+{% if S_ALLOW_CDN %}<script>window.jQuery || document.write('\x3Cscript src="{T_ASSETS_PATH}/javascript/jquery-3.6.0.min.js?assets_version={T_ASSETS_VERSION}">\x3C/script>');</script>{% endif %}
+<script src="{{ T_ASSETS_PATH }}/javascript/core.js?assets_version={{ T_ASSETS_VERSION }}"></script>
+{% INCLUDEJS 'forum_fn.js' %}
+{% INCLUDEJS 'ajax.js' %}
+{% if S_ALLOW_CDN %}
+	<script>
+		(function($){
+			var $fa_cdn = $('head').find('link[rel="stylesheet"]').first(),
+				$span = $('<span class="fa" style="display:none"></span>').appendTo('body');
+			if ($span.css('fontFamily') !== 'FontAwesome' ) {
+				$fa_cdn.after('<link href="{{ T_ASSETS_PATH }}/css/font-awesome.min.css" rel="stylesheet">');
+				$fa_cdn.remove();
+			}
+			$span.remove();
+		})(jQuery);
+	</script>
+{% endif %}
+<script>
+/* Set the width of the side navigation to 300px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "300px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+{% if not S_USER_LOGGED_IN and not S_IS_BOT %}
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+{% endif %}
+<script>
+function calcWidth() {
+  var navwidth = 0;
+  var morewidth = $('#main .more').outerWidth(true);
+  $('#main > li:not(.more)').each(function() {
+      navwidth += $(this).outerWidth( true );
+  });
+  var availablespace = $('nav').outerWidth(true) - morewidth;
+  
+  if (navwidth > availablespace) {
+    var lastItem = $('#main > li:not(.more)').last();
+    lastItem.attr('data-width', lastItem.outerWidth(true));
+    lastItem.prependTo($('#main .more ul'));
+    calcWidth();
+  } else {
+    var firstMoreElement = $('#main li.more li').first();
+    if (navwidth + firstMoreElement.data('width') < availablespace) {
+      firstMoreElement.insertBefore($('#main .more'));
+    }
+  }
+  
+  if ($('.more li').length > 0) {
+    $('.more').css('display','inline-block');
+  } else {
+    $('.more').css('display','none');
+  }
+}
+$(window).on('resize load',function(){
+  calcWidth();
+});
+</script>
+{% if S_COOKIE_NOTICE %}
+	<script src="{{ T_ASSETS_PATH }}/cookieconsent/cookieconsent.min.js?assets_version={{ T_ASSETS_VERSION }}"></script>
+	<script>
+		if (typeof window.cookieconsent === "object") {	
+		window.addEventListener("load", function(){
+			window.cookieconsent.initialise({
+				"palette": {
+					"popup": {
+						"background": "#107c10"
+					},
+					"button": {
+						"background": "#f1f1f1"
+					}
+				},
+				"theme": "classic",
+				"content": {
+					"message": "{{ lang('COOKIE_CONSENT_MSG')|escape('js') }}",
+					"dismiss": "{{ lang('COOKIE_CONSENT_OK')|escape('js') }}",
+					"link": "{{ lang('COOKIE_CONSENT_INFO')|escape('js') }}",
+						"href": "{{ UA_PRIVACY }}"
+					}
+				});
+			});
+				}
+	</script>
+{% endif %}
+
+{% EVENT overall_footer_after %}
+<script  src="{{ T_TEMPLATE_PATH }}/jquery.cookie.js"></script>
+<script  src="{{ T_TEMPLATE_PATH }}/jquery.collapse.js"></script>
+
+<script>
+        $(".forumlist").collapse({show: function(){
+                this.animate({
+                    opacity: 'toggle',
+                    height: 'toggle'
+                }, 300);
+            },
+            hide : function() {
+                   
+                this.animate({
+                    opacity: 'toggle',
+                    height: 'toggle'
+                }, 300);
+            }
+        });
+</script>
+{% if S_PLUPLOAD %}{% INCLUDE 'plupload.html' %}{% endif %}
+{{ definition.SCRIPTS }}
+
+{% EVENT overall_footer_body_after %}
+
+</body>
+</html>
