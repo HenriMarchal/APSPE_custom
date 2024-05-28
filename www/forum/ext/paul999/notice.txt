@@ -4,3 +4,4 @@ l'extension TFA a été testée localement et en prod. Elle fonctionnement parfa
 J'ai (mouadibs) rajouté des logs et messages d'erreur dans l'extension afin de d'enquêter sur le problème sur l'environnement de prod.
 
 Une fois le problème corrigé et l'extension retenue pour la prod, il faudra continuer de traduire l'extension dans un langage clair (car c'est une fonctionnalité complexe), et même faire un petit tuto avec capture d'écran en sujet épinglé dans le forum "infos phobiesociale.org".
+Pour l'app a installé sur le smartphone, conseiller Google Authenticator, Microsoft Authenticator, Aegis ou quoi que ce soit de compatible "TOTP".

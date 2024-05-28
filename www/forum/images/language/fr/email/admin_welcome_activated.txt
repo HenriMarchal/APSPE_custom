@@ -6,6 +6,6 @@ Votre compte sur « {SITENAME} » a été activé par un administrateur, vous 
 
 Votre mot de passe a été stocké en toute sécurité dans notre base de données et ne pourra pas être retrouvé. Dans le cas où vous l’oubliez, vous pourrez le réinitialiser en utilisant l’adresse de courriel associée à votre compte.
 
-Vous avez désormais la possibilité de poster sur le forum et de vous connecter au tchat.
+Vous avez désormais la possibilité de poster sur tous les forums et de vous connecter au tchat.
 
 {EMAIL_SIG}
