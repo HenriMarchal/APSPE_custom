@@ -1,6 +1,30 @@
 {% INCLUDE 'overall_header.html' %}
 
 <div><h2 style="text-align: left;"><a href="{U_AUTO_EVALUATION}">Test d'auto-&eacute;valuation de son anxi&eacute;t&eacute;</a></h2><br /></div>
+
+<div class="forabg xbox-layout">
+    <div class="inner">
+		<h2 class="forum-name"><a href="{U_ARTICLES}">Les derniers articles</a></h2>
+		<div class="collapsethis">
+			<ul class="forums">
+				<!-- IF latest_article_feed -->
+					<!-- BEGIN latest_article_feed -->
+						<li class="row">
+							<dl class="row-item forum_read">
+								<dt>
+									<div class="list-inner">
+										<a class="forumtitle" href="{category_children.URL}">{latest_article_feed.CATEGORY_NAME}</a>
+										<div><a class="forumtitle" href="{latest_article_feed.U_ARTICLE}">{latest_article_feed.ARTICLE_TITLE}</a>  {latest_article_feed.EXERPT}</div>
+									</div>
+								</dt>
+							</dl>
+						</li>
+					<!-- END latest_article_feed -->
+				<!-- ENDIF -->
+			</ul>
+		</div>
+    </div>
+</div>
 {% EVENT index_body_markforums_before %}
 
 {% EVENT index_body_markforums_after %}

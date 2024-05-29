@@ -3,6 +3,35 @@
 <div class="top-image"><img src="{T_THEME_PATH}/images/beautiful_green_lake.jpg" width="2560" title="Earth phpBb theme" alt="Earth nature field" /></div>
 <div><h2 style="text-align: left;"><a href="{U_AUTO_EVALUATION}">Test d'auto-&eacute;valuation de son anxi&eacute;t&eacute;</a></h2><br /></div>
 
+<div class="forabg">
+    <div class="inner">
+		<ul class="topiclist">
+			<li class="header">
+				<dl class="row-item">
+					<dt>
+						<div class="list-inner"><a href="{U_ARTICLES}">Les derniers articles</a></div>
+					</dt>
+				</dl>
+			</li>
+		</ul>
+		<ul class="topiclist forums">
+			<!-- IF latest_article_feed -->
+				<!-- BEGIN latest_article_feed -->
+					<li class="row">
+						<dl class="row-item">
+							<dt>
+								<div class="list-inner">
+									<a class="forumtitle" href="{category_children.URL}">{latest_article_feed.CATEGORY_NAME}</a>
+									<div><a class="forumtitle" href="{latest_article_feed.U_ARTICLE}">{latest_article_feed.ARTICLE_TITLE}</a>  {latest_article_feed.EXERPT}</div>
+								</div>
+							</dt>
+						</dl>
+					</li>
+				<!-- END latest_article_feed -->
+			<!-- ENDIF -->
+		</ul>
+    </div>
+</div>
 <!-- INCLUDE forumlist_body.html -->
 
 <!-- EVENT index_body_forumlist_body_after -->

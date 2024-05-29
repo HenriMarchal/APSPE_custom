@@ -254,13 +254,16 @@ while ($row = $db->sql_fetchrow($result))
 				'title'			 => $row['title'],
 				'alias'			 => $row['alias'],
 				'category_name'	 => $row['category_name'],
-				'exerpt'		 => substr($row['content'], 0, 350).'...',
+				'exerpt'		 => substr(strip_tags($row['content']), 0, 350).'...',
 			);
 		}
 	}
 }
 $db->sql_freeresult($result);
 
+$template->assign_vars(array(
+	'U_ARTICLES'	=> append_sid("{$phpbb_root_path}app.$phpEx/article"))
+);
 foreach ($latest as $row)
 {
 	$template->assign_block_vars('latest_article_feed', array(
