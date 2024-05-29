@@ -11,6 +11,9 @@
 <!-- iOS Safari -->
 <meta name="apple-mobile-web-app-status-bar-style" content="#171717">
 {{ META }}
+<meta
+  name="description"
+  content="forum, blog et chat/tchat visant à l\'entraide et la bienveillance entre phobiques sociaux et personnes souffrant du trouble de la personnalité évitante." />
 <title>{% if UNREAD_NOTIFICATIONS_COUNT %}({{ UNREAD_NOTIFICATIONS_COUNT }}) {% endif %}{% if not S_VIEWTOPIC and not S_VIEWFORUM %}{{ SITENAME }} - {% endif %}{% if S_IN_MCP %}{{ lang('MCP') }} - {% elseif S_IN_UCP %}{{ lang('UCP') }} - {% endif %}{{ PAGE_TITLE }}{% if S_VIEWTOPIC or S_VIEWFORUM %} - {{ SITENAME }}{% endif %}</title>
 
 <link rel="shortcut icon" href="/favicon.ico">
