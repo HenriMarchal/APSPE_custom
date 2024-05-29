@@ -225,6 +225,7 @@ function isMoteur($ip) {
 	$listeiprobots[]='127.0.0.1';// Localhost
 	$listeiprobots[]='2001:41d0:1004:56::1';// Robot OVH
 	$listeiprobots[]='154.3.62.58';// mixrank robot
+	$listeiprobots[]='66.249.66.66';// Google crawler bot
 	if(in_array($ip, $listeiprobots)) {
 		return true;
 	}
