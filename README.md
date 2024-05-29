@@ -20,7 +20,9 @@ We have installed several styles and customized them in order to display some el
 
 - the chat button, the menu of articles and the link to newsletters are in template/overalll_header.html.
 
-- the link for the PS auto-test is in template/index-body.html.
+- the link for the PS auto-test and the list of last articles are in template/index-body.html.
+
+- the request code for the list of last articles is in index.php.
 
 - our copyright is in template/overall_footer.html.
 
