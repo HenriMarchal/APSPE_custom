@@ -226,6 +226,10 @@ function isMoteur($ip) {
 	$listeiprobots[]='2001:41d0:1004:56::1';// Robot OVH
 	$listeiprobots[]='154.3.62.58';// mixrank robot
 	$listeiprobots[]='66.249.66.66';// Google crawler bot
+	$listeiprobots[]='136.243.228.178';// Hezner online datacenter
+	$listeiprobots[]='136.243.222.140';// Hezner online datacenter
+	$listeiprobots[]='175.22.85.198'; // China unicom network
+	$listeiprobots[]='182.204.140.95';// China net backbone
 	if(in_array($ip, $listeiprobots)) {
 		return true;
 	}
