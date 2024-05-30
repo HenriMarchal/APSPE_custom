@@ -14,7 +14,8 @@
 {{ META }}
 <meta
   name="description"
-  content="forum, blog et chat/tchat visant à l\'entraide et la bienveillance entre phobiques sociaux et personnes souffrant du trouble de la personnalité évitante." />
+  content="forum, blog et chat/tchat visant à l\'entraide, la solidarité et la bienveillance entre phobiques sociaux et personnes souffrant du trouble de la personnalité évitante. 
+  Le sujet de l'anxiété sociale et de la timidité maladive est traité dans des articles et des vidéos de référence traitant de psychologie. Il y a des témoignages de personnes malades ou guéries/soignées. Des techniques de relaxation et de la musique relaxante libre de droit sont également disponibles. Mais aussi une bibliographie de référence sur la PS/PE et des liens utiles vers des associations réputées dans le domaine." />
 <title>{% if UNREAD_NOTIFICATIONS_COUNT %}({{ UNREAD_NOTIFICATIONS_COUNT }}) {% endif %}{% if not S_VIEWTOPIC and not S_VIEWFORUM %}{{ SITENAME }} - {% endif %}{% if S_IN_MCP %}{{ lang('MCP') }} - {% elseif S_IN_UCP %}{{ lang('UCP') }} - {% endif %}{{ PAGE_TITLE }}{% if S_VIEWTOPIC or S_VIEWFORUM %} - {{ SITENAME }}{% endif %}</title>
 
 <link rel="shortcut icon" href="/favicon.ico">
@@ -106,11 +107,13 @@ OPTIONS TO TWEAK IN OVERALL_HEADER.HTML
 				<a id="logo" class="logo" href="{% if U_SITE_HOME %}{{ U_SITE_HOME }}{% else %}{{ U_INDEX }}{% endif %}" title="{% if U_SITE_HOME %}{{ L_SITE_HOME }}{% else %}{{ L_INDEX }}{% endif %}">
 					<span class="site_logo"></span>
 				</a>
+				<h1 style="text-align: left;">{SITENAME}</h1>
+				<h2 style="text-align: left;">{SITE_DESCRIPTION}</h2>
 				<p class="skiplink"><a href="#start_here">{{ lang('SKIP') }}</a></p>
 			</div>
 	{% EVENT overall_header_searchbox_before %}
 			{% if S_DISPLAY_SEARCH and not S_IN_SEARCH %}
-			<div id="search-box" class="search-box search-header" role="search" style="display: none;">
+			<div id="search-box" class="search-box search-header" role="search">
 				<form action="{{ U_SEARCH }}" method="get" id="search">
 				<fieldset>
 					<input name="keywords" id="keywords" type="search" maxlength="128" title="{{ lang('SEARCH_KEYWORDS') }}" class="inputbox search tiny" size="20" value="{{ SEARCH_WORDS }}" placeholder="{{ lang('SEARCH_MINI') }}" />
@@ -135,7 +138,7 @@ OPTIONS TO TWEAK IN OVERALL_HEADER.HTML
 		{% INCLUDE 'navbar_header.html' %}
 	</div>
 
-	<div id="chatLink" style="width: 100%;text-align: center"><a href="chat.php" style="height: 40px;width: 300px;vertical-align: middle;text-align: center;border: 2px;border-style: groove; border-color:#0076ff;border-radius: 15px; font-size: large;background-color: #0076ff; color: #ffffff;">Le chat de phobiesociale.org</a></div>
+	<h2 id="chatLink" style="width: 100%;text-align: center"><a href="chat.php" style="height: 40px;width: 300px;vertical-align: middle;text-align: center;border: 2px;border-style: groove; border-color:#0076ff;border-radius: 15px; font-size: large;background-color: #0076ff; color: #ffffff;">Le chat de phobiesociale.org</a></h2>
 	<div><br /></div>
     {% EVENT overall_header_page_body_before %}
 
