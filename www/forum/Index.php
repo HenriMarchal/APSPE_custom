@@ -226,10 +226,21 @@ function isMoteur($ip) {
 	$listeiprobots[]='2001:41d0:1004:56::1';// Robot OVH
 	$listeiprobots[]='154.3.62.58';// mixrank robot
 	$listeiprobots[]='66.249.66.66';// Google crawler bot
+	$listeiprobots[]='66.249.73.200';// Google crawler bot
+	$listeiprobots[]='66.249.77.132';// Google crawler bot
 	$listeiprobots[]='136.243.228.178';// Hezner online datacenter
 	$listeiprobots[]='136.243.222.140';// Hezner online datacenter
 	$listeiprobots[]='175.22.85.198'; // China unicom network
 	$listeiprobots[]='182.204.140.95';// China net backbone
+	$listeiprobots[]='182.204.143.254';// China net backbone
+	$listeiprobots[]='182.204.140.192';// China net backbone
+	$listeiprobots[]='182.204.142.130';// China net backbone
+	$listeiprobots[]='123.244.130.98';// China net backbone
+	$listeiprobots[]='3.224.220.101';// Amazon crawler bot
+	$listeiprobots[]='34.242.25.233';// Amazon crawler bot
+	$listeiprobots[]='35.91.71.92';// Amazon data center
+	$listeiprobots[]='2a03:2880:2ff:5::face:b00c';// Facebook crawler bot
+	$listeiprobots[]='2a03:2880:2ff:1::face:b00c';// Facebook crawler bot
 	if(in_array($ip, $listeiprobots)) {
 		return true;
 	}
