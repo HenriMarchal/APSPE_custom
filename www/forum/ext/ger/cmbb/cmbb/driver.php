@@ -469,9 +469,9 @@ class driver
 	 * @param string $style = ''
 	 * @return string
 	 */	
-	public function get_featured_img($article_id, $title, $style = '')
+	public function get_featured_img($image_name, $title, $style = '')
 	{
-		$full_url = generate_board_url() . '/images/cmbb_upload/featured/site_logo.jpg';		
+		$full_url = generate_board_url() . '/images/cmbb_upload/featured/'.$image_name;
 		return '<img src="' . $full_url . '" title="' . $title . '" style="' . $style . '" />';
 	}
 

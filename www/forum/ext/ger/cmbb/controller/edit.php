@@ -141,6 +141,14 @@ class edit
 		$item = 'site_logo.jpg';
 		//$item = str_replace('//', '/', $item);
 		$return[$item] = $this->presentation->character_limiter($item);
+		$item = 'psy-psychologie.jpg';
+		$return[$item] = $this->presentation->character_limiter($item);
+		$item = 'temoignage-gueris.jpg';
+		$return[$item] = $this->presentation->character_limiter($item);
+		$item = 'temoignage-malades.jpg';
+		$return[$item] = $this->presentation->character_limiter($item);
+		$item = 'newsletter.jpg';
+		$return[$item] = $this->presentation->character_limiter($item);
 		/**if (is_dir($dir)) 
 		{
 			$dh = scandir($dir);
