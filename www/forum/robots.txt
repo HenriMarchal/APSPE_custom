@@ -1,2 +1,4 @@
 User-agent: *
-Allow: /
+Allow: /ucp.php?mode=login&redirect=index.php*
+Disallow: /memberlist.php*
+Disallow: /ucp.php?mode=login*
