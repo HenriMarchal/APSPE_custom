@@ -242,6 +242,7 @@ function isMoteur($ip) {
 	$listeiprobots[]='35.91.71.92';// Amazon data center
 	$listeiprobots[]='2a03:2880:2ff:5::face:b00c';// Facebook crawler bot
 	$listeiprobots[]='2a03:2880:2ff:1::face:b00c';// Facebook crawler bot
+	$listeiprobots[]='2a03:2880:13ff:9::face:b00c';// Facebook crawler bot
 	if(in_array($ip, $listeiprobots)) {
 		return true;
 	}
