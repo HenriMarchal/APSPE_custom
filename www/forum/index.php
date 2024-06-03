@@ -13,8 +13,6 @@
 
 /**
 */
-// Customized code for calling anti scraper behaviour
-//echo '<a href="Index.php"><img src="Index.png" width="100" height="100" border="0"></a>'
 
 /**
 * @ignore
@@ -290,6 +288,7 @@ extract($phpbb_dispatcher->trigger_event('core.index_modify_page_title', compact
 
 // Output page
 page_header($page_title, true);
+
 $template->set_filenames(array(
 	'body' => 'index_body.html')
 );
