@@ -130,7 +130,7 @@ Si vous avez des questions ou un retour à faire sur vos newsletters, prière de
 	'DIGESTS_PUBLISH_DATE'				=> 'La newsletter a été publié spécifiquement pour %1$s le %2$s',
 	'DIGESTS_REGISTER'					=> 'Recevoir les newsletters',
 	'DIGESTS_REGISTER_EXPLAIN'			=> 'Les réglages par défaut du forum seront utilisés. Vous pourrez ajuster ces réglages ou vous désinscrire après votre inscription.',
-	'DIGESTS_REMOVE_YOURS'				=> 'Enelever mes messages',
+	'DIGESTS_REMOVE_YOURS'				=> 'Enlever mes messages',
 	'DIGESTS_REPLY'						=> 'Répondre',
 	'DIGESTS_ROBOT'						=> 'Robot',
 	'DIGESTS_SALUTATION' 				=> 'Cher',
