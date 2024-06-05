@@ -241,6 +241,7 @@ function isMoteur($ip) {
 	$listeiprobots[]='34.242.25.233';// Amazon crawler bot
 	$listeiprobots[]='35.91.71.92';// Amazon data center
 	$listeiprobots[]='47.128.43.132';// Amazon data center
+	$listeiprobots[]='54.229.250.113';// Amazon data center
 	$listeiprobots[]='2a03:2880:2ff:5::face:b00c';// Facebook crawler bot
 	$listeiprobots[]='2a03:2880:2ff:1::face:b00c';// Facebook crawler bot
 	$listeiprobots[]='2a03:2880:13ff:9::face:b00c';// Facebook crawler bot
