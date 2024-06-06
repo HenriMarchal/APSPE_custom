@@ -420,7 +420,8 @@ class action_manager
 							'user_ip'				=> $this->user->ip,
 							'username'				=> $username,
 							'session_start'			=> time(),
-							'session_viewonline'	=> $this->user->data['session_viewonline'],
+							//Modif technova 2024 06 : force la visibilité des users dans le chat peu importe leur choix et role (notamment l'admin qui était tjrs invisible?!)
+							'session_viewonline'	=> 1, //$this->user->data['session_viewonline'],
 							'user_lastjoin'			=> time(),
 							'user_key'				=> $this->user_key,
 							'user_online'			=> 1,
@@ -442,7 +443,8 @@ class action_manager
 					$update_ary = [
 						'user_online'			=> 1,
 						'session_start'			=> time(),
-						'session_viewonline'	=> $this->user->data['session_viewonline'],
+						//Modif technova 2024 06 : force la visibilité des users dans le chat peu importe leur choix et role (notamment l'admin qui était tjrs invisible?!)
+						'session_viewonline'	=> 1, //$this->user->data['session_viewonline'],
 						'user_lastjoin'			=> time(),
 					];
 					
