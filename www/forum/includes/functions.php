@@ -4141,6 +4141,7 @@ function page_header($page_title = '', $display_online_list = false, $item_id = 
 		'U_AUTO_EVALUATION'					=> append_sid("{$phpbb_root_path}styles/all/template/evaluation_questionnary/index.php"),
 		'U_AUTO_EVALUATION_P2'				=> append_sid("{$phpbb_root_path}styles/all/template/evaluation_questionnary/page2.php"),
 		'U_AUTO_EVALUATION_P3'				=> append_sid("{$phpbb_root_path}styles/all/template/evaluation_questionnary/page3.php"),
+		'U_CHAT' 							=> append_sid("{$phpbb_root_path}app.$phpEx/chat"),
 	));
 
 	$http_headers = array();
