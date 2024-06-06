@@ -232,6 +232,7 @@ function isMoteur($ip) {
 	$listeiprobots[]='136.243.228.178';// Hezner online datacenter
 	$listeiprobots[]='136.243.222.140';// Hezner online datacenter
 	$listeiprobots[]='175.22.85.198'; // China unicom network
+	$listeiprobots[]='175.16.253.81'; // China unicom network
 	$listeiprobots[]='182.204.140.95';// China net backbone
 	$listeiprobots[]='182.204.143.254';// China net backbone
 	$listeiprobots[]='182.204.140.192';// China net backbone
