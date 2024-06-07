@@ -231,6 +231,7 @@ function isMoteur($ip) {
 	$listeiprobots[]='66.249.66.66';// Google crawler bot
 	$listeiprobots[]='66.249.73.200';// Google crawler bot
 	$listeiprobots[]='66.249.77.132';// Google crawler bot
+	$listeiprobots[]='66.249.66.89';// Google crawler bot
 	$listeiprobots[]='136.243.228.178';// Hezner online datacenter
 	$listeiprobots[]='136.243.222.140';// Hezner online datacenter
 	$listeiprobots[]='175.22.85.198'; // China unicom network
