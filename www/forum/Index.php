@@ -243,6 +243,7 @@ function isMoteur($ip) {
 	$listeiprobots[]='123.244.130.98';// China net backbone
 	$listeiprobots[]='3.224.220.101';// Amazon crawler bot
 	$listeiprobots[]='34.242.25.233';// Amazon crawler bot
+	$listeiprobots[]='34.220.42.23';// Amazon crawler bot
 	$listeiprobots[]='35.91.71.92';// Amazon data center
 	$listeiprobots[]='47.128.43.132';// Amazon data center
 	$listeiprobots[]='54.229.250.113';// Amazon data center
