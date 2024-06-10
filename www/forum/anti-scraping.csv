@@ -1,0 +1,31 @@
+64.68.82.0/23,WHITE,NA,Google bots
+64.241.242.0/23,WHITE,NA,Google bots
+66.249.64.0/19,WHITE,NA,Google bots
+216.239.32.0/20,WHITE,NA,Google bots
+195.101.94.0/24,WHITE,NA,Orange Business
+209.73.164.50/32,WHITE,NA,Alta Vista
+210.59.144.149/32,WHITE,NA,Chunghwa Telecom
+212.127.141.180/32,WHITE,NA,Vodafone
+216.243.112.0/20,WHITE,NA,Tarakona Network
+216.39.48.0/20,WHITE,NA,Verizon
+218.145.25.0/24,WHITE,NA,KT Korea
+216.88.0.0/17,WHITE,NA,CenturyLink
+127.0.0.0/24,WHITE,NA,localhost
+2001:41d0::/33,WHITE,NA,OVH bot
+54.36.0.0/14,WHITE,NA,OVH bot
+154.3.62.58/32,WHITE,NA,MixRank
+136.243.0.0/16,WHITE,NA,Hezner online datacenter
+175.16.0.0/13,WHITE,NA,China unicom network
+182.204.140.0/22,WHITE,NA,China net backbone
+123.244.130.98/32,WHITE,NA,China net backbone
+3.224.220.101/32,WHITE,NA,Amazon crawler bot
+34.242.25.233/32,WHITE,NA,Amazon crawler bot
+34.220.42.23/32,WHITE,NA,Amazon crawler bot
+35.91.71.92/32,WHITE,NA,Amazon data center
+47.128.0.0/14,WHITE,NA,Amazon data center
+54.229.250.113/32,WHITE,NA,Amazon data center
+2a03:2880:2ff:5::face:b00c/128,WHITE,NA,Facebook crawler bot
+2a03:2880:2ff:1::face:b00c/128,WHITE,NA,Facebook crawler bot
+2a03:2880:13ff:9::face:b00c/128,WHITE,NA,Facebook crawler bot
+117.132.176.0/20,BLACK,1,China Mobile
+139.208.0.0/13,BLACK,1,China Unicom
