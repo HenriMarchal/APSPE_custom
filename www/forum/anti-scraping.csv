@@ -15,6 +15,7 @@
 54.36.0.0/14,WHITE,NA,OVH bot
 154.3.62.58/32,WHITE,NA,MixRank
 136.243.0.0/16,WHITE,NA,Hezner online datacenter
+144.76.22.0/27,WHITE,NA,Hezner online datacenter
 175.16.0.0/13,WHITE,NA,China unicom network
 182.204.140.0/22,WHITE,NA,China net backbone
 123.244.130.98/32,WHITE,NA,China net backbone
@@ -29,3 +30,4 @@
 2a03:2880:13ff:9::face:b00c/128,WHITE,NA,Facebook crawler bot
 117.132.176.0/20,BLACK,1,China Mobile
 139.208.0.0/13,BLACK,1,China Unicom
+109.70.100.0/24,BLACK,1,Tor
