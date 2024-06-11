@@ -27,47 +27,59 @@
 					<span>{{ lang('FAQ') }}</span>
 				</a>
 			</li>
-			<li class="quick-links dropdown-container responsive-menu<!-- IF not S_DISPLAY_QUICK_LINKS and not S_DISPLAY_SEARCH --> hidden<!-- ENDIF -->" data-skip-responsive="true">
-				<a href="#" class="dropdown-trigger">
-					<i class="icon fa-bars fa-fw" aria-hidden="true"></i><span>Articles</span>
-				</a>
-				<div class="dropdown">
-					<div class="pointer"><div class="pointer-inner"></div></div>
-					<ul class="dropdown-contents" role="menu">
-						<!-- EVENT navbar_header_quick_links_before -->
-	
-							<li class="separator"></li>
-							<li>
-								<a href="{U_ARTICLES}" role="menuitem">
-									<i class="icon fa-files-o fa-fw icon-blue" aria-hidden="true"></i><span>Tous les articles</span>
-								</a>
-							</li>
-							<li>
-								<a href="{U_ARTICLES_PSYCHOLOGIE}" role="menuitem">
-									<i class="icon fa-file-o fa-fw icon-blue" aria-hidden="true"></i><span>Psychologie</span>
-								</a>
-							</li>
-							<li>
-								<a href="{U_ARTICLES_TEMOIGNAGES_MALADES}" role="menuitem">
-									<i class="icon fa-file-o fa-fw icon-blue" aria-hidden="true"></i><span>Témoignages malades</span>
-								</a>
-							</li>
-							<li>
-								<a href="{U_ARTICLES_TEMOIGNAGES_GUERIS}" role="menuitem">
-									<i class="icon fa-file-o fa-fw icon-blue" aria-hidden="true"></i><span>Témoignages guéris</span>
-								</a>
-							</li>
-							<li class="separator"></li>
-	
-						<!-- EVENT navbar_header_quick_links_after -->
-					</ul>
-				</div>
-			</li>
-			<li <!-- IF not S_USER_LOGGED_IN -->data-skip-responsive="true"<!-- ELSE -->data-last-responsive="true"<!-- ENDIF -->>
-				<a href="{U_NEWSLETTERS}" rel="newsletters" title="Newsletters" role="menuitem">
-					<i class="icon fa-newspaper-o fa-fw icon-blue" aria-hidden="true"></i><span>Newsletters</span>
-				</a>
-			</li>
+			
+		
+		<li class="quick-links dropdown-container responsive-menu<!-- IF not S_DISPLAY_QUICK_LINKS and not S_DISPLAY_SEARCH --> hidden<!-- ENDIF -->" data-skip-responsive="true">
+			<a href="#" class="dropdown-trigger">
+				<i class="icon fa-files-o fa-fw icon-green" aria-hidden="true"></i><span><b style="color: green;">Articles</b></span>
+			</a>
+			<div class="dropdown">
+				<div class="pointer"><div class="pointer-inner"></div></div>
+				<ul class="dropdown-contents" role="menu">
+					<!-- EVENT navbar_header_quick_links_before -->
+
+						<li class="separator"></li>
+						<li>
+							<a href="{U_ARTICLES}" role="menuitem">
+								<i class="icon fa-files-o fa-fw icon-green" aria-hidden="true"></i><span>Tous les articles</span>
+							</a>
+						</li>
+						<li>
+							<a href="{U_ARTICLES_PSYCHOLOGIE}" role="menuitem">
+								<i class="icon fa-file-o fa-fw icon-green" aria-hidden="true"></i><span>Psychologie</span>
+							</a>
+						</li>
+						<li>
+							<a href="{U_ARTICLES_TEMOIGNAGES_MALADES}" role="menuitem">
+								<i class="icon fa-file-o fa-fw icon-green" aria-hidden="true"></i><span>Témoignages malades</span>
+							</a>
+						</li>
+						<li>
+							<a href="{U_ARTICLES_TEMOIGNAGES_GUERIS}" role="menuitem">
+								<i class="icon fa-file-o fa-fw icon-green" aria-hidden="true"></i><span>Témoignages guéris</span>
+							</a>
+						</li>
+						<li class="separator"></li>
+
+					<!-- EVENT navbar_header_quick_links_after -->
+				</ul>
+			</div>
+		</li>
+		<li <!-- IF not S_USER_LOGGED_IN -->data-skip-responsive="true"<!-- ELSE -->data-last-responsive="true"<!-- ENDIF -->>
+			<a href="{U_NEWSLETTERS}" rel="newsletters" title="Newsletters" role="menuitem">
+				<i class="icon fa-newspaper-o fa-fw icon-blue" aria-hidden="true"></i><span>Newsletters</span>
+			</a>
+		</li>
+		<li <!-- IF not S_USER_LOGGED_IN -->data-skip-responsive="true"<!-- ELSE -->data-last-responsive="true"<!-- ENDIF -->>
+			<a href="{U_URGENCES_PSY_GUIDE_COMPLET}" rel="urgences-psy-guide-complet" title="urgences psys: le guide complet" role="menuitem">
+				<i class="icon fa-medkit fa-fw icon-red" aria-hidden="true"></i><span><b style="color: red;">Urgences psy: guide complet</b></span>
+			</a>
+		</li>
+		<li <!-- IF not S_USER_LOGGED_IN -->data-skip-responsive="true"<!-- ELSE -->data-last-responsive="true"<!-- ENDIF -->>
+			<a href="{U_URGENCES_PSY_EN_BREF}" rel="urgences-psy-en-bref" title="urgences psys: en bref" role="menuitem">
+				<i class="icon fa-medkit fa-fw icon-red" aria-hidden="true"></i><span><b style="color: red;">Urgences psy: en bref</b></span>
+			</a>
+		</li>
 			{% EVENT overall_header_navigation_append %}
 			{% if U_ACP %}
 			<li data-last-responsive="true">
@@ -94,6 +106,36 @@
 			<li class="more hidden" data-width="80">
 				<a href="#"><span class="fa fa-ellipsis-h" style="display:block;"></span></a>
 				<ul></ul>
+			</li>
+		</ul>
+	</nav>
+	<nav class="navbarsec">
+		<ul id="nav-main" class="nav-main" role="menubar">
+		
+			<li <!-- IF not S_USER_LOGGED_IN -->data-skip-responsive="true"<!-- ELSE -->data-last-responsive="true"<!-- ENDIF -->>
+				<a href="{U_VIDEOS}" rel="videos" title="videos" role="menuitem">
+					<i class="icon fa-film fa-fw icon-green" aria-hidden="true"></i><span><b style="color: green;">Vidéos de référence</b></span>
+				</a>
+			</li>
+			<li <!-- IF not S_USER_LOGGED_IN -->data-skip-responsive="true"<!-- ELSE -->data-last-responsive="true"<!-- ENDIF -->>
+				<a href="{U_BIBLIOGRAPHIE}" rel="bibliographie" title="bibliographie" role="menuitem">
+					<i class="icon fa-book fa-fw icon-green" aria-hidden="true"></i><span><b style="color: green;">Bibliographie</b></span>
+				</a>
+			</li>
+			<li <!-- IF not S_USER_LOGGED_IN -->data-skip-responsive="true"<!-- ELSE -->data-last-responsive="true"<!-- ENDIF -->>
+				<a href="{U_MUSIQUES}" rel="musiques" title="musiques" role="menuitem">
+					<i class="icon fa-music fa-fw icon-blue" aria-hidden="true"></i><span>Musiques relaxantes</span>
+				</a>
+			</li>
+			<li <!-- IF not S_USER_LOGGED_IN -->data-skip-responsive="true"<!-- ELSE -->data-last-responsive="true"<!-- ENDIF -->>
+				<a href="{U_LIENS_UTILES}" rel="liens-utiles" title="liens utiles" role="menuitem">
+					<i class="icon fa-link fa-fw icon-blue" aria-hidden="true"></i><span>Liens utiles</span>
+				</a>
+			</li>
+			<li <!-- IF not S_USER_LOGGED_IN -->data-skip-responsive="true"<!-- ELSE -->data-last-responsive="true"<!-- ENDIF -->>
+				<a href="{U_URGENCES_USUELLES}" rel="urgences-usuelles" title="numéros d'urgence usuels" role="menuitem">
+					<i class="icon fa-fire-extinguisher fa-fw icon-red" aria-hidden="true"></i><span style="color: red;">Numéros d'urgence usuels</span>
+				</a>
 			</li>
 		</ul>
 	</nav>

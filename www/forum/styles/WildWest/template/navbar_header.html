@@ -1,144 +1,154 @@
 <div class="navbar" role="navigation">
 	<div class="inner">
 
-	<ul id="nav-main" class="nav-main linklist" role="menubar">
-
-		<li id="quick-links" class="quick-links dropdown-container responsive-menu<!-- IF not S_DISPLAY_QUICK_LINKS and not S_DISPLAY_SEARCH --> hidden<!-- ENDIF -->" data-skip-responsive="true">
-			<a href="#" class="dropdown-trigger">
-				<i class="icon fa-bars fa-fw" aria-hidden="true"></i><span>{L_QUICK_LINKS}</span>
-			</a>
-			<div class="dropdown">
-				<div class="pointer"><div class="pointer-inner"></div></div>
-				<ul class="dropdown-contents" role="menu">
-					<!-- EVENT navbar_header_quick_links_before -->
-
-					<!-- IF S_DISPLAY_SEARCH -->
+		<ul id="nav-main" class="nav-main linklist" role="menubar">
+			<li id="quick-links" class="quick-links dropdown-container responsive-menu<!-- IF not S_DISPLAY_QUICK_LINKS and not S_DISPLAY_SEARCH --> hidden<!-- ENDIF -->" data-skip-responsive="true">
+				<a href="#" class="dropdown-trigger">
+					<i class="icon fa-bars fa-fw" aria-hidden="true"></i><span><b>{L_QUICK_LINKS}</b></span>
+				</a>
+				<div class="dropdown">
+					<div class="pointer"><div class="pointer-inner"></div></div>
+					<ul class="dropdown-contents" role="menu">
+						<!-- EVENT navbar_header_quick_links_before -->
+	
+						<!-- IF S_DISPLAY_SEARCH -->
+							<li class="separator"></li>
+							<!-- IF S_REGISTERED_USER -->
+								<li>
+									<a href="{U_SEARCH_SELF}" role="menuitem">
+										<i class="icon fa-file-o fa-fw icon-gray" aria-hidden="true"></i><span>{L_SEARCH_SELF}</span>
+									</a>
+								</li>
+							<!-- ENDIF -->
+							<!-- IF S_USER_LOGGED_IN -->
+								<li>
+									<a href="{U_SEARCH_NEW}" role="menuitem">
+										<i class="icon fa-file-o fa-fw icon-red" aria-hidden="true"></i><span>{L_SEARCH_NEW}</span>
+									</a>
+								</li>
+							<!-- ENDIF -->
+							<!-- IF S_LOAD_UNREADS -->
+								<li>
+									<a href="{U_SEARCH_UNREAD}" role="menuitem">
+										<i class="icon fa-file-o fa-fw icon-red" aria-hidden="true"></i><span>{L_SEARCH_UNREAD}</span>
+									</a>
+								</li>
+							<!-- ENDIF -->
+								<li>
+									<a href="{U_SEARCH_UNANSWERED}" role="menuitem">
+										<i class="icon fa-file-o fa-fw icon-gray" aria-hidden="true"></i><span>{L_SEARCH_UNANSWERED}</span>
+									</a>
+								</li>
+								<li>
+									<a href="{U_SEARCH_ACTIVE_TOPICS}" role="menuitem">
+										<i class="icon fa-file-o fa-fw icon-blue" aria-hidden="true"></i><span>{L_SEARCH_ACTIVE_TOPICS}</span>
+									</a>
+								</li>
+								<li class="separator"></li>
+								<li>
+									<a href="{U_SEARCH}" role="menuitem">
+										<i class="icon fa-search fa-fw" aria-hidden="true"></i><span>{L_SEARCH}</span>
+									</a>
+								</li>
+						<!-- ENDIF -->
+	
+						<!-- IF not S_IS_BOT and (S_DISPLAY_MEMBERLIST or U_TEAM) -->
+							<li class="separator"></li>
+							<!-- IF S_DISPLAY_MEMBERLIST -->
+								<li>
+									<a href="{U_MEMBERLIST}" role="menuitem">
+										<i class="icon fa-group fa-fw" aria-hidden="true"></i><span>{L_MEMBERLIST}</span>
+									</a>
+								</li>
+							<!-- ENDIF -->
+							<!-- IF U_TEAM -->
+								<li>
+									<a href="{U_TEAM}" role="menuitem">
+										<i class="icon fa-shield fa-fw" aria-hidden="true"></i><span>{L_THE_TEAM}</span>
+									</a>
+								</li>
+							<!-- ENDIF -->
+						<!-- ENDIF -->
 						<li class="separator"></li>
-						<!-- IF S_REGISTERED_USER -->
+	
+						<!-- EVENT navbar_header_quick_links_after -->
+					</ul>
+				</div>
+			</li>
+	
+			<!-- EVENT overall_header_navigation_prepend -->
+			<li <!-- IF not S_USER_LOGGED_IN -->data-skip-responsive="true"<!-- ELSE -->data-last-responsive="true"<!-- ENDIF -->>
+				<a href="{U_FAQ}" rel="help" title="{L_FAQ_EXPLAIN}" role="menuitem">
+					<i class="icon fa-question-circle fa-fw" aria-hidden="true"></i><span>{L_FAQ}</span>
+				</a>
+			</li>
+			
+			<li class="quick-links dropdown-container responsive-menu<!-- IF not S_DISPLAY_QUICK_LINKS and not S_DISPLAY_SEARCH --> hidden<!-- ENDIF -->" data-skip-responsive="true">
+				<a href="#" class="dropdown-trigger">
+					<i class="icon fa-files-o fa-fw icon-green" aria-hidden="true"></i><span><b style="color: green;">Articles</b></span>
+				</a>
+				<div class="dropdown">
+					<div class="pointer"><div class="pointer-inner"></div></div>
+					<ul class="dropdown-contents" role="menu">
+						<!-- EVENT navbar_header_quick_links_before -->
+	
+							<li class="separator"></li>
 							<li>
-								<a href="{U_SEARCH_SELF}" role="menuitem">
-									<i class="icon fa-file-o fa-fw icon-gray" aria-hidden="true"></i><span>{L_SEARCH_SELF}</span>
+								<a href="{U_ARTICLES}" role="menuitem">
+									<i class="icon fa-files-o fa-fw icon-green" aria-hidden="true"></i><span>Tous les articles</span>
 								</a>
 							</li>
-						<!-- ENDIF -->
-						<!-- IF S_USER_LOGGED_IN -->
 							<li>
-								<a href="{U_SEARCH_NEW}" role="menuitem">
-									<i class="icon fa-file-o fa-fw icon-red" aria-hidden="true"></i><span>{L_SEARCH_NEW}</span>
-								</a>
-							</li>
-						<!-- ENDIF -->
-						<!-- IF S_LOAD_UNREADS -->
-							<li>
-								<a href="{U_SEARCH_UNREAD}" role="menuitem">
-									<i class="icon fa-file-o fa-fw icon-red" aria-hidden="true"></i><span>{L_SEARCH_UNREAD}</span>
-								</a>
-							</li>
-						<!-- ENDIF -->
-							<li>
-								<a href="{U_SEARCH_UNANSWERED}" role="menuitem">
-									<i class="icon fa-file-o fa-fw icon-gray" aria-hidden="true"></i><span>{L_SEARCH_UNANSWERED}</span>
+								<a href="{U_ARTICLES_PSYCHOLOGIE}" role="menuitem">
+									<i class="icon fa-file-o fa-fw icon-green" aria-hidden="true"></i><span>Psychologie</span>
 								</a>
 							</li>
 							<li>
-								<a href="{U_SEARCH_ACTIVE_TOPICS}" role="menuitem">
-									<i class="icon fa-file-o fa-fw icon-blue" aria-hidden="true"></i><span>{L_SEARCH_ACTIVE_TOPICS}</span>
+								<a href="{U_ARTICLES_TEMOIGNAGES_MALADES}" role="menuitem">
+									<i class="icon fa-file-o fa-fw icon-green" aria-hidden="true"></i><span>Témoignages malades</span>
+								</a>
+							</li>
+							<li>
+								<a href="{U_ARTICLES_TEMOIGNAGES_GUERIS}" role="menuitem">
+									<i class="icon fa-file-o fa-fw icon-green" aria-hidden="true"></i><span>Témoignages guéris</span>
 								</a>
 							</li>
 							<li class="separator"></li>
-							<li>
-								<a href="{U_SEARCH}" role="menuitem">
-									<i class="icon fa-search fa-fw" aria-hidden="true"></i><span>{L_SEARCH}</span>
-								</a>
-							</li>
-					<!-- ENDIF -->
-
-					<!-- IF not S_IS_BOT and (S_DISPLAY_MEMBERLIST or U_TEAM) -->
-						<li class="separator"></li>
-						<!-- IF S_DISPLAY_MEMBERLIST -->
-							<li>
-								<a href="{U_MEMBERLIST}" role="menuitem">
-									<i class="icon fa-group fa-fw" aria-hidden="true"></i><span>{L_MEMBERLIST}</span>
-								</a>
-							</li>
-						<!-- ENDIF -->
-						<!-- IF U_TEAM -->
-							<li>
-								<a href="{U_TEAM}" role="menuitem">
-									<i class="icon fa-shield fa-fw" aria-hidden="true"></i><span>{L_THE_TEAM}</span>
-								</a>
-							</li>
-						<!-- ENDIF -->
-					<!-- ENDIF -->
-					<li class="separator"></li>
-
-					<!-- EVENT navbar_header_quick_links_after -->
-				</ul>
-			</div>
-		</li>
-
-		<!-- EVENT overall_header_navigation_prepend -->
-		<li <!-- IF not S_USER_LOGGED_IN -->data-skip-responsive="true"<!-- ELSE -->data-last-responsive="true"<!-- ENDIF -->>
-			<a href="{U_FAQ}" rel="help" title="{L_FAQ_EXPLAIN}" role="menuitem">
-				<i class="icon fa-question-circle fa-fw" aria-hidden="true"></i><span>{L_FAQ}</span>
-			</a>
-		</li>
-		<li class="quick-links dropdown-container responsive-menu<!-- IF not S_DISPLAY_QUICK_LINKS and not S_DISPLAY_SEARCH --> hidden<!-- ENDIF -->" data-skip-responsive="true">
-			<a href="#" class="dropdown-trigger">
-				<i class="icon fa-bars fa-fw" aria-hidden="true"></i><span>Articles</span>
-			</a>
-			<div class="dropdown">
-				<div class="pointer"><div class="pointer-inner"></div></div>
-				<ul class="dropdown-contents" role="menu">
-					<!-- EVENT navbar_header_quick_links_before -->
-
-						<li class="separator"></li>
-						<li>
-							<a href="{U_ARTICLES}" role="menuitem">
-								<i class="icon fa-files-o fa-fw" aria-hidden="true"></i><span>Tous les articles</span>
-							</a>
-						</li>
-						<li>
-							<a href="{U_ARTICLES_PSYCHOLOGIE}" role="menuitem">
-								<i class="icon fa-file-o fa-fw" aria-hidden="true"></i><span>Psychologie</span>
-							</a>
-						</li>
-						<li>
-							<a href="{U_ARTICLES_TEMOIGNAGES_MALADES}" role="menuitem">
-								<i class="icon fa-file-o fa-fw" aria-hidden="true"></i><span>Témoignages malades</span>
-							</a>
-						</li>
-						<li>
-							<a href="{U_ARTICLES_TEMOIGNAGES_GUERIS}" role="menuitem">
-								<i class="icon fa-file-o fa-fw" aria-hidden="true"></i><span>Témoignages guéris</span>
-							</a>
-						</li>
-						<li class="separator"></li>
-
-					<!-- EVENT navbar_header_quick_links_after -->
-				</ul>
-			</div>
-		</li>
-		<li <!-- IF not S_USER_LOGGED_IN -->data-skip-responsive="true"<!-- ELSE -->data-last-responsive="true"<!-- ENDIF -->>
-			<a href="{U_NEWSLETTERS}" rel="newsletters" title="Newsletters" role="menuitem">
-				<i class="icon fa-newspaper-o fa-fw" aria-hidden="true"></i><span>Newsletters</span>
-			</a>
-		</li>
-		<!-- EVENT overall_header_navigation_append -->
-		<!-- IF U_ACP -->
-			<li data-last-responsive="true">
-				<a href="{U_ACP}" title="{L_ACP}" role="menuitem">
-					<i class="icon fa-cogs fa-fw" aria-hidden="true"></i><span>{L_ACP_SHORT}</span>
+	
+						<!-- EVENT navbar_header_quick_links_after -->
+					</ul>
+				</div>
+			</li>
+			<li <!-- IF not S_USER_LOGGED_IN -->data-skip-responsive="true"<!-- ELSE -->data-last-responsive="true"<!-- ENDIF -->>
+				<a href="{U_NEWSLETTERS}" rel="newsletters" title="Newsletters" role="menuitem">
+					<i class="icon fa-newspaper-o fa-fw icon-blue" aria-hidden="true"></i><span>Newsletters</span>
 				</a>
 			</li>
-		<!-- ENDIF -->
-		<!-- IF U_MCP -->
-			<li data-last-responsive="true">
-				<a href="{U_MCP}" title="{L_MCP}" role="menuitem">
-					<i class="icon fa-gavel fa-fw" aria-hidden="true"></i><span>{L_MCP_SHORT}</span>
+			<li <!-- IF not S_USER_LOGGED_IN -->data-skip-responsive="true"<!-- ELSE -->data-last-responsive="true"<!-- ENDIF -->>
+				<a href="{U_URGENCES_PSY_GUIDE_COMPLET}" rel="urgences-psy-guide-complet" title="urgences psys: le guide complet" role="menuitem">
+					<i class="icon fa-medkit fa-fw icon-red" aria-hidden="true"></i><span><b style="color: red;">Urgences psy: guide complet</b></span>
 				</a>
 			</li>
-		<!-- ENDIF -->
+			<li <!-- IF not S_USER_LOGGED_IN -->data-skip-responsive="true"<!-- ELSE -->data-last-responsive="true"<!-- ENDIF -->>
+				<a href="{U_URGENCES_PSY_EN_BREF}" rel="urgences-psy-en-bref" title="urgences psys: en bref" role="menuitem">
+					<i class="icon fa-medkit fa-fw icon-red" aria-hidden="true"></i><span><b style="color: red;">Urgences psy: en bref</b></span>
+				</a>
+			</li>
+			<!-- EVENT overall_header_navigation_append -->
+			<!-- IF U_ACP -->
+				<li data-last-responsive="true">
+					<a href="{U_ACP}" title="{L_ACP}" role="menuitem">
+						<i class="icon fa-cogs fa-fw" aria-hidden="true"></i><span>{L_ACP_SHORT}</span>
+					</a>
+				</li>
+			<!-- ENDIF -->
+			<!-- IF U_MCP -->
+				<li data-last-responsive="true">
+					<a href="{U_MCP}" title="{L_MCP}" role="menuitem">
+						<i class="icon fa-gavel fa-fw" aria-hidden="true"></i><span>{L_MCP_SHORT}</span>
+					</a>
+				</li>
+			<!-- ENDIF -->
 		<!-- EVENT navbar_header_searchbox_before -->
 				<!-- IF S_DISPLAY_SEARCH and not S_IN_SEARCH -->
 				<div id="search-box" class="search-box search-header" role="search">
@@ -158,6 +168,34 @@
 			<!-- ENDIF -->
 			<!-- EVENT navbar_header_searchbox_after -->
 
+	</ul>
+	<ul id="nav-main" class="nav-main linklist" role="menubar">
+		
+		<li <!-- IF not S_USER_LOGGED_IN -->data-skip-responsive="true"<!-- ELSE -->data-last-responsive="true"<!-- ENDIF -->>
+			<a href="{U_VIDEOS}" rel="videos" title="videos" role="menuitem">
+				<i class="icon fa-film fa-fw icon-green" aria-hidden="true"></i><span><b style="color: green;">Vidéos de référence</b></span>
+			</a>
+		</li>
+		<li <!-- IF not S_USER_LOGGED_IN -->data-skip-responsive="true"<!-- ELSE -->data-last-responsive="true"<!-- ENDIF -->>
+			<a href="{U_BIBLIOGRAPHIE}" rel="bibliographie" title="bibliographie" role="menuitem">
+				<i class="icon fa-book fa-fw icon-green" aria-hidden="true"></i><span><b style="color: green;">Bibliographie</b></span>
+			</a>
+		</li>
+		<li <!-- IF not S_USER_LOGGED_IN -->data-skip-responsive="true"<!-- ELSE -->data-last-responsive="true"<!-- ENDIF -->>
+			<a href="{U_MUSIQUES}" rel="musiques" title="musiques" role="menuitem">
+				<i class="icon fa-music fa-fw icon-blue" aria-hidden="true"></i><span>Musiques relaxantes</span>
+			</a>
+		</li>
+		<li <!-- IF not S_USER_LOGGED_IN -->data-skip-responsive="true"<!-- ELSE -->data-last-responsive="true"<!-- ENDIF -->>
+			<a href="{U_LIENS_UTILES}" rel="liens-utiles" title="liens utiles" role="menuitem">
+				<i class="icon fa-link fa-fw icon-blue" aria-hidden="true"></i><span>Liens utiles</span>
+			</a>
+		</li>
+		<li <!-- IF not S_USER_LOGGED_IN -->data-skip-responsive="true"<!-- ELSE -->data-last-responsive="true"<!-- ENDIF -->>
+			<a href="{U_URGENCES_USUELLES}" rel="urgences-usuelles" title="numéros d'urgence usuels" role="menuitem">
+				<i class="icon fa-fire-extinguisher fa-fw icon-red" aria-hidden="true"></i><span style="color: red;">Numéros d'urgence usuels</span>
+			</a>
+		</li>
 	</ul>
 
 	<ul id="nav-breadcrumbs" class="nav-breadcrumbs linklist navlinks" role="menubar">
