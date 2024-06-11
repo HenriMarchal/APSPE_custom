@@ -99,7 +99,7 @@
 #arrowchat_userslist_offline{display:none}
 #arrowchat_userslist_invisible{display:none}
 #arrowchat_search_friends{font-size:14px;padding:10px;box-shadow:0 0px 2px rgb(0 0 0 / 10%), 0 -1px rgb(0 0 0 / 10%) inset, 0 2px 1px -1px rgb(255 255 255 / 50%) inset;display:flex;align-items:center}
-#arrowchat_search_friends input{background:#fff;border-radius:0;-webkit-box-sizing:content-box;font-family:Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;font-size:15px;font-weight:normal;width:100%;padding:6px 4px 6px 8px;cursor:text;margin:0px;color:#050505;border:0px;outline:0;line-height:normal !important;text-align:left;direction:ltr;}
+#arrowchat_search_friends input{background:#fff;border-radius:0;-webkit-box-sizing:content-box;font-family:Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;font-size:15px;font-weight:normal;width:100%;padding:6px 4px 6px 8px;cursor:text;margin:0px;color:#050505;border:0px;outline:0;line-height:normal !important;text-align:left;direction:ltr;min-height:auto}
 .arrowchat_group_container{position:relative;text-align:center;margin:5px 0}
 .arrowchat_group_text{color:#65676B;font-size:15px;line-height:20px;font-weight:700}
 .arrowchat_chatroom_line_admins,.arrowchat_chatroom_line_mods,.arrowchat_chatroom_line_users{padding:8px}
@@ -137,7 +137,7 @@
 .arrowchat_chatboxtabtitlemouseover2{}
 .arrowchat_chatboxtabtitlemouseover3{background-color:#3e7cf7  !important}
 .arrowchat_tabcontentinput{display:flex;padding:12px 0;border:0px;outline:none;text-align:left;position:relative;align-items:flex-end;}
-.arrowchat_textarea{background:none;border:0px;padding:8px 32px 0 16px;height:32px;width:100%;overflow:hidden;font-family:helvetica,arial,sans-serif;font-size:16px;color:#050505;outline:none;resize:none;text-align:left;margin:0px;-webkit-box-shadow:none !important;-moz-box-shadow:none !important;box-shadow:none !important;direction:ltr;line-height:1em}
+.arrowchat_textarea{background:none;border:0px;padding:8px 32px 0 16px;height:32px;width:100%;overflow:hidden;font-family:helvetica,arial,sans-serif;font-size:16px;color:#050505;outline:none;resize:none;text-align:left;margin:0px;-webkit-box-shadow:none !important;-moz-box-shadow:none !important;box-shadow:none !important;direction:ltr;line-height:1em;min-height:auto}
 .arrowchat_textarea::-webkit-input-placeholder{color:#dfdfdf}
 .arrowchat_textarea:-ms-input-placeholder{color:#dfdfdf}
 .arrowchat_textarea::-moz-placeholder{color:#bebebe}
