@@ -28,6 +28,7 @@
 2a03:2880:2ff:5::face:b00c/128,WHITE,NA,Facebook crawler bot
 2a03:2880:2ff:1::face:b00c/128,WHITE,NA,Facebook crawler bot
 2a03:2880:13ff:9::face:b00c/128,WHITE,NA,Facebook crawler bot
+17.128.0.0/9,WHITE,NA,Apple crawler bot
 117.132.176.0/20,BLACK,1,China Mobile
 139.208.0.0/13,BLACK,1,China Unicom
 109.70.100.0/24,BLACK,1,Tor
