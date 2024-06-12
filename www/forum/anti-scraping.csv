@@ -19,6 +19,7 @@
 175.16.0.0/13,WHITE,NA,China unicom network
 182.204.140.0/22,WHITE,NA,China net backbone
 123.244.130.98/32,WHITE,NA,China net backbone
+39.150.128.0/20,WHITE,NA,Henan communication
 3.224.220.101/32,WHITE,NA,Amazon crawler bot
 34.242.25.233/32,WHITE,NA,Amazon crawler bot
 34.220.42.23/32,WHITE,NA,Amazon crawler bot

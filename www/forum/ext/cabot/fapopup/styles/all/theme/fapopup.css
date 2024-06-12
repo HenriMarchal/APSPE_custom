@@ -1,0 +1,25 @@
+/* Popup Forumactif
+----------------------------------------*/
+#login_popup {
+	display: none;
+	background-color: white;
+	padding: 6px 8px;
+	position: absolute;
+	z-index: 99;
+	border: 1px solid #109FE5;
+	box-shadow: 0 0 10px 6px rgba(109, 109, 109, 0.55);
+	overflow-y: scroll;
+	scrollbar-width: thin;
+}
+
+#login_popup p {
+	text-align: justify;
+}
+
+#login_popup_buttons {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 10px;
+	text-align: center;
+}
