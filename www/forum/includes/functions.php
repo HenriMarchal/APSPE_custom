@@ -4148,6 +4148,7 @@ function page_header($page_title = '', $display_online_list = false, $item_id = 
 		'U_URGENCES_USUELLES'				=> append_sid("{$phpbb_root_path}app.$phpEx/numros-durgence-de-tous-les-jours"),
 		'U_URGENCES_PSY_GUIDE_COMPLET'		=> append_sid("{$phpbb_root_path}app.$phpEx/urgences-psy-guide-complet"),
 		'U_URGENCES_PSY_EN_BREF'  			=> append_sid("{$phpbb_root_path}app.$phpEx/urgences-psy"),
+		'U_TCHAT'				  			=> append_sid("{$phpbb_root_path}chat.$phpEx"),
 
 	));
 
