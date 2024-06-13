@@ -21,6 +21,7 @@
 123.244.130.98/32,WHITE,NA,China net backbone
 39.150.128.0/20,WHITE,NA,Henan communication
 3.224.220.101/32,WHITE,NA,Amazon crawler bot
+3.248.0.0/13,WHITE,NA,Amazon crawler bot
 34.242.25.233/32,WHITE,NA,Amazon crawler bot
 34.220.42.23/32,WHITE,NA,Amazon crawler bot
 35.91.71.92/32,WHITE,NA,Amazon data center
