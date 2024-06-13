@@ -4141,7 +4141,6 @@ function page_header($page_title = '', $display_online_list = false, $item_id = 
 		'U_AUTO_EVALUATION'					=> append_sid("{$phpbb_root_path}styles/all/template/evaluation_questionnary/index.php"),
 		'U_AUTO_EVALUATION_P2'				=> append_sid("{$phpbb_root_path}styles/all/template/evaluation_questionnary/page2.php"),
 		'U_AUTO_EVALUATION_P3'				=> append_sid("{$phpbb_root_path}styles/all/template/evaluation_questionnary/page3.php"),
-		'U_CHAT' 							=> append_sid("{$phpbb_root_path}app.$phpEx/chat"),
 		'U_VIDEOS' 							=> append_sid("{$phpbb_root_path}app.$phpEx/videos"),
 		'U_MUSIQUES' 						=> append_sid("{$phpbb_root_path}app.$phpEx/musiques"),
 		'U_BIBLIOGRAPHIE'					=> append_sid("{$phpbb_root_path}app.$phpEx/bibliographie"),
@@ -4149,6 +4148,7 @@ function page_header($page_title = '', $display_online_list = false, $item_id = 
 		'U_URGENCES_USUELLES'				=> append_sid("{$phpbb_root_path}app.$phpEx/numros-durgence-de-tous-les-jours"),
 		'U_URGENCES_PSY_GUIDE_COMPLET'		=> append_sid("{$phpbb_root_path}app.$phpEx/urgences-psy-guide-complet"),
 		'U_URGENCES_PSY_EN_BREF'  			=> append_sid("{$phpbb_root_path}app.$phpEx/urgences-psy"),
+
 	));
 
 	$http_headers = array();
