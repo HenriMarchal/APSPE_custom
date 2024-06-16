@@ -252,8 +252,9 @@ $template->set_filenames(array(
 	'body' => 'index_body.html')
 );
 
+//include("includes/functions.php");
 echo '<script type="text/javascript" src="/arrowchat/autoload.php" charset="utf-8"></script>'; 
-echo '<script type="text/javascript" charset="utf-8">window.onload = function(){ document.getElementById("chatLink").innerHTML="<a href=\"chat.php\" style=\"height: 40px;width: 300px;vertical-align: middle;text-align: center;border: 2px;border-style: groove; border-color:#0076ff;border-radius: 15px; font-size: large;background-color: #0076ff; color: #ffffff;\">Le chat de phobiesociale.org :</a><br />la bulle bleue en bas à droite"; window.open("https://www.phobiesociale.org/arrowchat/public/popout/?cid=1&ah=1");};</script>';
+echo '<script type="text/javascript" charset="utf-8">window.onload = function(){ document.getElementById("chatLink").innerHTML="<a href=\"'.$U_TCHAT.'\" style=\"height: 40px;width: 300px;vertical-align: middle;text-align: center;border: 2px;border-style: groove; border-color:#0076ff;border-radius: 15px; font-size: large;background-color: #0076ff; color: #ffffff;\">Le chat de phobiesociale.org :</a><br />la bulle bleue en bas à droite"; window.open("https://www.phobiesociale.org/arrowchat/public/popout/?cid=1&ah=1");};</script>';
 
 page_footer();
 ?>
